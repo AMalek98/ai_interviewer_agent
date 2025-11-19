@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 2,
+      "question_title": "SQL Query Optimization for Data Analysis",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Average order value for customer 101: 200.0",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 1,
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Unindexed Query Time: 0.000000 seconds Indexed Query Time: 0.000000 seconds",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Customer Segmentation and Lifetime Value Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

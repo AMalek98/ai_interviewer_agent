@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.2,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Inefficient SQL Query Optimization for Data Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the prompt's requirement to optimize a SQL query.",
+        "The candidate needs to provide a SQL query and an explanation of how to optimize it.",
+        "This response demonstrates a lack of understanding of the question."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Customer 101: Average Order Value = 125.00 Customer 102: Average Order Value = 225.00 Customer 103: Average Order Value = 300.00 Customer 104: Average Order Value = 0.00",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "E-commerce Order Analysis and Customer Segmentation",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table but provided no schema.",
+        "The response lacks any details about the tables, columns, or relationships required for the e-commerce order analysis and customer segmentation task.",
+        "The response demonstrates a lack of understanding of database schema design."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Order Analysis",
+      "question_type": "db_schema",
+      "score": 2,
+      "feedback": [
+        "The code provided has a syntax error and does not define any tables or columns required for customer order analysis.",
+        "The response lacks any attempt to address the problem of designing a database schema for customer order analysis.",
+        "The candidate needs to demonstrate understanding of database design principles and SQL syntax to answer this question."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" and does not address the problem.",
+        "The candidate provides no explanation of the problem or potential solutions.",
+        "This response demonstrates a lack of understanding of the question."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Query: SELECT * FROM users WHERE age > 30 AND city = 'New York' Data Size: 10000 Execution Time: 117.00 seconds Potential Optimization: Consider adding an index to relevant columns.",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The code lacks any schema definition relevant to customer segmentation or targeted marketing, and the explanation is missing.",
+        "This response demonstrates a lack of understanding of the problem and SQL schema design principles."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T11:45:52.618899"
+}

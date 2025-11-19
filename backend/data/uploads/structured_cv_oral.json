@@ -1,0 +1,178 @@
+{
+  "personal_info": {
+    "name": "MALEK AJMI",
+    "email": "malek.ajmi98@gmail.com",
+    "phone": "+21699505353",
+    "location": "Tunisia"
+  },
+  "experiences": [
+    {
+      "company": "Metavoria",
+      "position": "AI Product Developer",
+      "start_date": "Jan 2025",
+      "end_date": "April 2025",
+      "duration": null,
+      "responsibilities": [
+        "Built the system and designed an AI assistant for restaurant order management, integrating a PostgreSQL database with PgVector.",
+        "Integrated Anthropic model for natural language processing and generated semantic embeddings, improving intent classi\ufb01cation accuracy by 50%.",
+        "Optimized Performance of conversational \ufb02ows using LangGraph and LangChain, reducing response time by 40% and increasing order process e\ufb03ciency by 30%."
+      ],
+      "technologies": [
+        "PostgreSQL",
+        "PgVector",
+        "ChatAnthropic",
+        "LangGraph",
+        "LangChain",
+        "NLP",
+        "Flask"
+      ]
+    },
+    {
+      "company": "Kripton",
+      "position": "Data scientist Intern",
+      "start_date": "Feb 2024",
+      "end_date": "Jul 2024",
+      "duration": null,
+      "responsibilities": [
+        "Annotated over 400 medical document images using CVAT.AI and preprocessed the data with advanced techniques.",
+        "Localized words in documents with Computer Vision Model YOLOv8, achieving 88% accuracy.",
+        "Accelerated the annotation process by 50% by integrating Ope-nAI Whisper into a custom web interface.",
+        "Fine-tuned the Microsoft/Trocr-base model for handwritten text recognition, achieving a Character Error Rate (CER) of 0.29.",
+        "Developed and deployed a complete Proof of Concept (PoC) using Django and generative AI, demonstrating end-to-end system feasibility.",
+        "Applied Scrum methodology to structure the project and enhance team collaboration."
+      ],
+      "technologies": [
+        "YOLOv8",
+        "Trocr",
+        "OpenAI Whisper",
+        "Django",
+        "generative AI",
+        "Computer Vision",
+        "Scrum"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Esprit School of Business",
+      "degree": "Masters",
+      "field_of_study": "Business Analytics",
+      "start_date": "Sept 2022",
+      "end_date": "July 2024",
+      "grade": null
+    },
+    {
+      "institution": "Higher Institut of Management Sousse",
+      "degree": "Bachelor",
+      "field_of_study": "Finance",
+      "start_date": "Sept 2017",
+      "end_date": "June 2020",
+      "grade": null
+    }
+  ],
+  "skills": [
+    {
+      "name": "Problem-solving",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Detail orientation",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Curious",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Communication",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Analytical Thinking",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Collaboration",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Python",
+      "category": "programming",
+      "proficiency": null
+    },
+    {
+      "name": "Financial analysis",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "ETL",
+      "category": "tool",
+      "proficiency": null
+    },
+    {
+      "name": "SQL",
+      "category": "programming",
+      "proficiency": null
+    },
+    {
+      "name": "AI modeling",
+      "category": "tool",
+      "proficiency": null
+    },
+    {
+      "name": "Data operations",
+      "category": "tool",
+      "proficiency": null
+    },
+    {
+      "name": "Financial document processing",
+      "category": "soft_skill",
+      "proficiency": null
+    },
+    {
+      "name": "Data analysis",
+      "category": "tool",
+      "proficiency": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI-Driven Investment Opportunity Analyzer",
+      "description": null,
+      "technologies": [
+        "BeautifulSoup",
+        "Selenium",
+        "MongoDB",
+        "OpenAI",
+        "Machine Learning",
+        "Django",
+        "Chart.js",
+        "HTML",
+        "CSS"
+      ],
+      "duration": "Oct 2023 - D\u00e9c 2023",
+      "achievements": [
+        "Built a Scalable MongoDB database that enabled e\ufb03cient storage and retrieval for more than 1,000 scrapped investment-related articles via BeautifulSoup and Slenium.",
+        "Leveraged OpenAI API with custom engineering gaining 80% ef\ufb01ciency to generate concise summaries and extract sentiment, streamlined analysis and enhanced decision relevance.",
+        "Trained classi\ufb01cation Machine Learning models to assess investment potential and achieved 83% accuracy in predicting viable opportunities.",
+        "Deployed the solution with Django and Chart.js and delivered interactive dashboards to support strategic decisionmaking."
+      ]
+    }
+  ],
+  "achievements": [
+    "Introduction to Deep Learning & Neural Networks with Keras | Coursera",
+    "Talend Data Integration Certi\ufb01cation Preparation training | Coursera"
+  ],
+  "languages": [
+    "English",
+    "French",
+    "Arabic"
+  ]
+}

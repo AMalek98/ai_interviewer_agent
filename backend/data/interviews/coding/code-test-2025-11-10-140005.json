@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "10-11-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Inefficient SQL Query for User Activity Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "[2, 1]",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "hi",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nhi"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\nselect *from table;\n\nDESIGN EXPLANATION:\naa",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\nselect *from table;\n\nDESIGN EXPLANATION:\naa"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Data: [Example Data - will vary on each run] Searching for: Example Search Value - will vary on each run Value Example Search Value - will vary on each run found at index Example Index - will vary on each run. Iterations: Example Iteration Count - will vary on each run Optimized search complete. Initial iterations: Example Iteration Count - will vary on each run, Optimized iterations: Example Optimized Iteration Count - will vary on each run",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "hi",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nhi"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Order Fulfillment Analysis for E-commerce",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\naa",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\naa"
+    }
+  ]
+}

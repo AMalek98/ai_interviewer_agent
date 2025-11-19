@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "27-10-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Order and Product Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\ngg",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\ngg"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Data Validation and Aggregation for Sales Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "{'A123': 175, 'C789': 200}",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Optimizing Order Fulfillment Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Query: SELECT * FROM orders WHERE customer_id = 123 Data Size: 500 Execution Time: 175.00 units Optimization Suggestion: Check if indexes are used on the WHERE clause columns. Query: SELECT o.order_id, c.customer_name FROM orders o JOIN customers c ON o.customer_id = c.customer_id Data Size: 200 Execution Time: 180.00 units Optimization Suggestion: Consider adding indexes to the join columns. Query: SELECT product_name FROM products Data Size: 100 Execution Time: 10.00 units Query performance is acceptable.",
+      "candidate_code": "print('x')",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint('x')\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

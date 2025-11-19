@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "status": "disqualified",
+    "reason": "security_violation",
+    "timestamp": "2025-11-12T14:58:12.602Z",
+    "question_count": 0,
+    "incomplete": true
+  },
+  "violation_details": {
+    "type": "fullscreen_exit",
+    "timestamp": "2025-11-12T14:58:12.601Z",
+    "sessionId": "text-1762959337484",
+    "interviewType": "text",
+    "violationCount": 2,
+    "isWarning": false,
+    "allViolations": [
+      {
+        "type": "fullscreen_exit",
+        "timestamp": "2025-11-12T14:58:12.601Z",
+        "sessionId": "text-1762959337484",
+        "interviewType": "text",
+        "violationCount": 2,
+        "isWarning": false
+      }
+    ]
+  },
+  "interview_log": []
+}

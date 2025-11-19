@@ -1,0 +1,16 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "30-10-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Optimizing Order Fulfillment Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate tabl; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate tabl; \n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

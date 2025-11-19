@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "candidate_name": "MALEK AJMI",
+    "date": "2025-10-30",
+    "duration_minutes": 10.6,
+    "total_turns": 14,
+    "difficulty_score": 6,
+    "topics_covered": [
+      "project",
+      "database",
+      "team"
+    ],
+    "job_description": "Job Title: Database Engineer / Data Management Specialist\n\nLocation: Hybrid / Remote / On-site (Flexible)\nEmployment Type: Full-Time\n\nAbout the Role\n\nWe are seeking a highly skilled Database Engineer ..."
+  },
+  "conversation": [
+    {
+      "speaker": "interviewer",
+      "text": "Hello! Thank you for joining us today. To start, could you please introduce yourself and tell me a bit about your background?",
+      "timestamp": "2025-10-30T12:19:53.705814",
+      "turn": 0,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "hello my name is melakashmi I am a graduate from a preschool of business I have master's degree in Business analytics my end of studies project or about doctors and writing recognition now I work as a freelancer AI developer",
+      "timestamp": "2025-10-30T12:20:34.466183",
+      "turn": 1,
+      "audio_file": "oral-interview-q0-2025-10-30T11-20-34.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time you were working on a project, either at Metavoria or Kripton, where the team faced a significant disagreement on how to approach a problem. How did you navigate that situation, and what was the outcome?",
+      "timestamp": "2025-10-30T12:20:35.438096",
+      "turn": 2,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was during the the restaurant customer service we had disagreement about the technology we will use some said they want to use the old method and they what I said let's use the link chain and then grab the year the newest methods of agent Gordon I'll come most the classical method one because I had not I don't I didn't have enough information about it to prove my point",
+      "timestamp": "2025-10-30T12:21:25.584472",
+      "turn": 2,
+      "audio_file": "oral-interview-q1-2025-10-30T11-21-25.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Describe a situation where you had to troubleshoot a complex technical problem in one of your projects at Metavoria or Kripton. What steps did you take to identify the root cause, and what resources or strategies did you find most helpful in resolving the issue?",
+      "timestamp": "2025-10-30T12:21:27.213028",
+      "turn": 3,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was the biggest challenge I've it was in my end of studies project in Krypton when I applied the recognition on the handwriting text it was the better results so I had to to check out my burning boxes and my database and I had to redo the database cleaning and preparation and thank God that we had the great result after that",
+      "timestamp": "2025-10-30T12:22:15.315621",
+      "turn": 3,
+      "audio_file": "oral-interview-q2-2025-10-30T11-22-15.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time when you had to quickly adapt to a significant change in project requirements or priorities while working on a project at Metavoria or Kripton. What was the change, and how did you adjust your approach to ensure the project's success?",
+      "timestamp": "2025-10-30T12:22:16.284990",
+      "turn": 4,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was the metaphora I am I was working I interviewed the the change was about the the goal of the interviewer it was all about with the using the CV and job description then my boss changed his mind and wanted only to use job description and interview point so I had to to do an extensive prompt engineering and some and some adjustment to the state manager",
+      "timestamp": "2025-10-30T12:23:08.335498",
+      "turn": 4,
+      "audio_file": "oral-interview-q3-2025-10-30T11-23-08.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for sharing those experiences, Malek. It's helpful to understand how you approach challenges and adapt to changes. Now, let's dive a bit deeper into the specifics of your work. Could you walk me through a project at Metavoria or Kripton where you feel you made a particularly significant contribution, highlighting the technologies you used and the impact you had?",
+      "timestamp": "2025-10-30T12:23:09.574113",
+      "turn": 5,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was in metaphoria my I had to work with the project that transcribe the row input into an SQL query and then creates an insightful dashboard I used long grass workflow it was a very new tool they liked it a lot because the results was insane",
+      "timestamp": "2025-10-30T12:24:01.429469",
+      "turn": 5,
+      "audio_file": "oral-interview-q4-2025-10-30T11-24-01.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Based on your experience as a freelancer AI developer, can you describe a project where you had to learn a new AI technology or approach to meet a client's specific needs? What were the key challenges you faced in mastering it, what impact did your work have on the client's project, and what did you learn from the experience that you've carried forward in your freelance work?",
+      "timestamp": "2025-10-30T12:24:02.636609",
+      "turn": 6,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was the latest project the querylands a year it was about transcribing the role in the user input into a screen date and then generate inside for dashboards I had to learn advance in line graph I had so I invested in a dedicated course luckily I got",
+      "timestamp": "2025-10-30T12:24:49.649598",
+      "turn": 6,
+      "audio_file": "oral-interview-q5-2025-10-30T11-24-49.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thinking about your time at Kripton, can you tell me about a project where you utilized YOLOv8, Trocr, or OpenAI Whisper? I'm interested in hearing about the specific problem you were trying to solve, the impact your work had on the project's outcome, and what you learned about these technologies or the overall process that you've found valuable since then.",
+      "timestamp": "2025-10-30T12:24:50.887047",
+      "turn": 7,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I used to open a whisper in my end of studies project it was an approach to help me create more data with my more data with the help of people that doesn't have knowledge of the science it was about the small interface for the document using your low powered by YOLO and they whisper that you love shows the burning boxes you click on the burning boxes and then you read the word and the word would be written in the screen and you can validated the if there is a mistake orthograph mistake or you can validate exactly this method help with me augmented database very fast because it didn't require any informative knowledge",
+      "timestamp": "2025-10-30T12:26:04.839001",
+      "turn": 7,
+      "audio_file": "oral-interview-q6-2025-10-30T11-26-04.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Malek, thinking about your time as an AI Product Developer at Metavoria, what's a specific achievement you're particularly proud of? Can you tell me about what you did to make it happen, the impact it had on the company or its users, any challenges you had to overcome along the way, and what you learned from that experience?",
+      "timestamp": "2025-10-30T12:26:06.278867",
+      "turn": 8,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "you doing my experience my time at the middle body as a freelancer we had so many challenges about Technologies and limited resources because it is a new company so my experience in them and that the scientist and turn an encryption helping me a lot manage resources because I also had no resources so I am I added to them the mentality of research and back door and the good way of course that's it",
+      "timestamp": "2025-10-30T12:27:03.195238",
+      "turn": 8,
+      "audio_file": "oral-interview-q7-2025-10-30T11-27-03.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Malek, thinking about your experience at Metavoria or Kripton, can you describe a time when you faced a significant ethical challenge related to the use of AI in one of your projects? What steps did you take to address it, what impact did your approach have, and what did you learn about navigating ethical considerations in AI development?",
+      "timestamp": "2025-10-30T12:27:04.522817",
+      "turn": 9,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was in Krypton to be honest I had some issues because I usually medical documents so I made sure that the AI models I am using are all local so I keep the data intact and the privacy of the people and talk to",
+      "timestamp": "2025-10-30T12:27:46.113423",
+      "turn": 9,
+      "audio_file": "oral-interview-q8-2025-10-30T11-27-46.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for detailing those experiences, Malek. It sounds like you've worked on some fascinating projects with diverse technologies. Now, thinking about this specific role, what aspects of it particularly excite you, and how do you see your skills and experience aligning with the requirements we've discussed?",
+      "timestamp": "2025-10-30T12:27:47.421023",
+      "turn": 10,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "this job description of this job but makes me evolved in more in data projects which I which I really like they are very very important nowadays because we can generate the insightful Solutions Etc",
+      "timestamp": "2025-10-30T12:28:30.998504",
+      "turn": 10,
+      "audio_file": "oral-interview-q9-2025-10-30T11-28-30.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "The job description mentions the need to \"write complex and optimized SQL queries, stored procedures, and views for data analysis and reporting.\" Can you describe a situation where you had to write a particularly complex SQL query to solve a challenging data analysis problem? What steps did you take to optimize its performance, and what was the impact of your optimization efforts?",
+      "timestamp": "2025-10-30T12:28:32.151150",
+      "turn": 11,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "are you had some issues with the sequel but I didn't write the complex sequel to be honest I used PG Vector for a vectorizing the database and I embedded the input so I can apply the semantic search on the vectorize database using PG vector",
+      "timestamp": "2025-10-30T12:29:19.438965",
+      "turn": 11,
+      "audio_file": "oral-interview-q10-2025-10-30T11-29-19.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role involves working closely with both backend developers and DevOps teams. Can you describe your experience collaborating with these teams in past projects, and how you've ensured smooth data flow and effective communication across different technical disciplines?",
+      "timestamp": "2025-10-30T12:29:20.420722",
+      "turn": 12,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "yes I had an experience to the delivering my insurance OCR to the development development team to so they can finish the app or he was with them all the way to explain the Technologies and how it works and the routes",
+      "timestamp": "2025-10-30T12:29:58.672973",
+      "turn": 12,
+      "audio_file": "oral-interview-q11-2025-10-30T11-29-58.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role requires a proactive approach to database monitoring and performance tuning. Can you describe your experience using database monitoring tools like Prometheus, Grafana, or New Relic to identify and resolve performance bottlenecks in database systems?",
+      "timestamp": "2025-10-30T12:29:59.848625",
+      "turn": 13,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I don't have any experience in that",
+      "timestamp": "2025-10-30T12:30:20.582085",
+      "turn": 13,
+      "audio_file": "oral-interview-q12-2025-10-30T11-30-20.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Do you have any questions for us?",
+      "timestamp": "2025-10-30T12:30:20.583150",
+      "turn": 14,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "no thank you",
+      "timestamp": "2025-10-30T12:30:26.952010",
+      "turn": 14,
+      "audio_file": "oral-interview-q13-2025-10-30T11-30-26.webm"
+    }
+  ]
+}

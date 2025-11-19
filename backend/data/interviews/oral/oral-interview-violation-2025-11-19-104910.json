@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "status": "disqualified",
+    "reason": "security_violation",
+    "timestamp": "2025-11-19T09:49:10.367Z",
+    "current_turn": 0,
+    "incomplete": true
+  },
+  "violation_details": {
+    "type": "fullscreen_exit",
+    "timestamp": "2025-11-19T09:49:10.366Z",
+    "sessionId": "oral-1763545717662",
+    "interviewType": "oral",
+    "violationCount": 2,
+    "isWarning": false,
+    "allViolations": [
+      {
+        "type": "fullscreen_exit",
+        "timestamp": "2025-11-19T09:49:10.366Z",
+        "sessionId": "oral-1763545717662",
+        "interviewType": "oral",
+        "violationCount": 2,
+        "isWarning": false
+      }
+    ]
+  },
+  "conversation": [
+    {
+      "speaker": "interviewer",
+      "text": "Hello! Thank you for joining us today. To start, could you please introduce yourself and tell me a bit about your background?",
+      "timestamp": "2025-11-19T10:48:37.658975",
+      "turn": 0
+    },
+    {
+      "speaker": "candidate",
+      "text": "hello my name is melakashmi and I have a master's degree in Business analytics from Spirit School of Business",
+      "timestamp": "2025-11-19T10:49:04.905553",
+      "turn": 1
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time you were working on a project with a team, and you encountered a significant disagreement on the best approach to take. How did you navigate that disagreement, and what was the outcome?",
+      "timestamp": "2025-11-19T10:49:05.623893",
+      "turn": 2
+    }
+  ]
+}

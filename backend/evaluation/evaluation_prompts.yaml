@@ -1,0 +1,43 @@
+# Ultra-Compact Evaluation Prompts - Single LLM Call Per Question
+# Reduces token usage by 80% while maintaining evaluation quality
+
+compact_evaluation_prompt: |
+  Evaluate this interview response against the reference answer.
+
+  REFERENCE ANSWER:
+  {reference_answer}
+
+  CANDIDATE'S RESPONSE:
+  {response}
+
+  Provide:
+  1. Technical score (0-10): How well does the response match the reference answer's technical depth and accuracy?
+  2. Grammar score (0-10): How clear, coherent, and well-structured is the response?
+  3. Grammar phrase (max 10 words): Brief assessment of grammar/clarity
+  4. Technical phrase (max 10 words): Brief assessment of technical quality
+  5. Missing phrase (max 10 words): What key points are missing from reference answer?
+
+  Keep each phrase concise and factual.
+
+evaluation_summary_prompt: |
+  Generate an overall evaluation summary for this candidate's interview performance.
+
+  SCORES:
+  - Overall Score: {overall_score}/10
+  - QCM Score: {qcm_score}/10 (30% weight)
+  - Technical Vocabulary: {tech_vocab_score}/10 (40% weight)
+  - Grammar/Flow: {grammar_flow_score}/10 (30% weight)
+
+  QCM DETAILS:
+  - Correct: {qcm_correct}/{qcm_total} ({qcm_percentage}%)
+
+  INSTRUCTIONS:
+  Write 2-3 sentences summarizing the candidate's overall performance:
+  1. Start with the overall score and general assessment
+  2. Highlight the strongest area
+  3. Identify the area needing most improvement
+
+  Be professional and constructive. This summary helps HR/hiring managers make decisions.
+
+  Example format:
+  "The candidate scored {overall_score}/10 overall, indicating [level] performance. [Strength observation]. [Improvement area observation]."

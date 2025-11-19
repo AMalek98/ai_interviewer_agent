@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The provided code `create table x;` lacks any schema definition, making it unusable for customer segmentation.",
+        "The response demonstrates a very limited understanding of database schema design and SQL."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hi\" and doesn't address the query simulation or optimization.",
+        "The candidate provided no meaningful code or explanation related to the problem.",
+        "The response demonstrates a lack of understanding of the task."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Query: SELECT * FROM orders WHERE customer_id = 123 AND order_date > '2023-01-01' Estimated Execution Time: 10500.00 Optimization Suggestion: Consider adding indexes to relevant columns.",
+          "actual_output": "hi",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The provided code has a syntax error and doesn't define any schema, missing all requirements.",
+        "The response demonstrates a lack of understanding of database schema design."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Inefficient SQL Query Generation for Data Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the problem of inefficient SQL query generation.",
+        "The candidate did not provide any SQL code or explanation related to the database question.",
+        "The response demonstrates a lack of understanding of the problem and requires significant improvement."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Executing query: SELECT * FROM products WHERE product_id IN (1, 2, 3); Results: [{'product_id': 1, 'name': 'Product A'}, {'product_id': 2, 'name': 'Product B'}, {'product_id': 3, 'name': 'Product C'}] Executing query: SELECT * FROM products WHERE product_id IN (4, 5); Results: [{'product_id': 4, 'name': 'Product D'}, {'product_id': 5, 'name': 'Product E'}]",
+          "actual_output": "hell oworld",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The provided code has a syntax error and is incomplete, lacking table definition and column specifications.",
+        "The response demonstrates a lack of understanding of basic SQL schema creation."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T12:53:01.012901"
+}

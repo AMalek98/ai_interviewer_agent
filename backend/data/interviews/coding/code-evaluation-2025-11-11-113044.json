@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "SQL Query Optimization for Data Analysis",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The candidate did not provide any SQL code.",
+        "The response only prints 'hello world' and doesn't address the SQL optimization problem.",
+        "The candidate needs to demonstrate SQL knowledge and problem-solving skills."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Average order value for customer 101: 200.0",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, indicating a basic understanding of the task.",
+        "The code provided is incomplete and contains syntax errors, making it impossible to evaluate the schema design.",
+        "The candidate needs to learn the correct SQL syntax and schema design principles."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The response provided only the phrase 'create table;' which is insufficient.",
+        "The candidate failed to provide any table schema or explanation.",
+        "This response demonstrates a lack of understanding of database schema design."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" and doesn't address the problem.",
+        "The explanation 'ss' provides no insight into the problem or a potential solution.",
+        "This response demonstrates a lack of understanding of the task."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Unindexed Query Time: 0.000000 seconds Indexed Query Time: 0.000000 seconds",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Customer Segmentation and Lifetime Value Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate did not provide any SQL code beyond the phrase 'create table'.",
+        "The response lacks any attempt to define tables, columns, or relationships required for customer segmentation and lifetime value analysis.",
+        "The candidate needs to demonstrate understanding of SQL syntax and database schema design principles."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T11:33:51.527049"
+}

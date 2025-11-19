@@ -1,0 +1,218 @@
+# Coding Interview Agent Prompts
+# Extracted from main interview_prompts.yaml for standalone coding interviewer
+
+difficulty_mapping:
+  1-2: "entry-level/junior"
+  3-4: "junior to mid-level"
+  5-6: "mid-level"
+  7-8: "senior-level"
+  9-10: "expert/principal-level"
+
+coding_questions:
+  debug_prompt: |
+    Generate a debugging exercise using {target_language} and {cv_technology} based on job requirements.
+
+    JOB REQUIREMENTS:
+    {job_description}
+
+    SKILL IMPORTANCE: This skill ({cv_technology}) is ranked {importance_rank} in importance for this role.
+    REQUIRED PROFICIENCY: {proficiency_level}
+
+    DIFFICULTY: {difficulty_level}/10 ({difficulty_description})
+    TARGET LANGUAGE: {target_language}
+    TECHNOLOGY: {cv_technology}
+
+    Create a code debugging question with:
+    - {error_count} logical error(s) appropriate for {difficulty_description} level
+    - 10-15 lines of {target_language} code using {cv_technology}
+    - Realistic scenario relevant to the job requirements
+    - Code that looks correct at first glance but has subtle bugs
+    - Focus on testing {proficiency_level} level understanding of {cv_technology}
+
+    **CRITICAL CONSTRAINT - LIBRARY USAGE:**
+    - Use ONLY Python built-in libraries (math, random, datetime, collections, itertools, re, json, etc.)
+    - DO NOT import external libraries (numpy, pandas, requests, psycopg2, flask, django, sqlalchemy, etc.)
+    - If the technology ({cv_technology}) requires external libraries, simulate the concept using built-in Python
+    - Keep code simple and executable in any standard Python environment without pip install
+
+    ERROR TYPES BY DIFFICULTY:
+    - Easy (1-3): Syntax errors, missing returns, wrong operators, off-by-one
+    - Medium (4-7): Logic errors + edge cases, type issues, null pointer issues
+    - Hard (8-10): Complex logic + architecture + edge cases + performance issues
+
+    PROGRESSIVE DIFFICULTY STRATEGY:
+    This question is part of a progressive difficulty interview where:
+    - Early questions (Difficulty 1-4): Focus on foundational understanding and basic application
+    - Middle questions (Difficulty 5-7): Introduce edge cases, moderate complexity, and deeper concepts
+    - Later questions (Difficulty 8-10): Test deep knowledge, optimization, complex scenarios, and advanced techniques
+
+    Adjust the complexity of bugs, code structure, and domain context accordingly.
+
+    RETURN FORMAT (IMPORTANT - Follow this exact structure):
+    **Problem Title:** [Concise, descriptive title]
+
+    **Context:** [1-2 sentence paragraph explaining the situation: What system or feature is this part of? Why does this code exist? What business need does it serve? Make it realistic and relevant to the job requirements.]
+
+    **Buggy Code:**
+    ```{target_language}
+    [The buggy code here - make it realistic and from their domain]
+    ```
+
+    **Your Task:** [Explicit, actionable instruction. Example: "Find and fix the {error_count} bug(s) in this code. For each bug, explain what the error was, why it caused incorrect behavior, and how you fixed it."]
+
+    **Expected Outcome:** [Specific expected result with concrete examples. Example: "When fixed, running this function with input [10, 20, 30] should return 60" or "The corrected code should produce output: 'Success: 3 items processed'"]
+
+    **Expected Output:** [CRITICAL: Provide the EXACT output that the CORRECTED code should produce when executed. Since test inputs are now EMBEDDED in the code itself (e.g., data = [1,2,3,4]), this output is what running the entire code file will produce. This should be the literal string output that will appear in stdout, including any formatting, newlines, or spacing. Examples: "15" for a simple calculation, "Total: 60\nAverage: 20" for multi-line output, "Hello, World!" for text output, "[1, 4, 9, 16]" for list output. If the code doesn't print anything to stdout, specify "No output" or describe what the function returns without printing. This will be used for automated output comparison.]
+
+  explanation_prompt: |
+    Generate a code explanation exercise using {target_language} and {cv_technology} based on job requirements.
+
+    JOB REQUIREMENTS:
+    {job_description}
+
+    SKILL IMPORTANCE: This skill ({cv_technology}) is ranked {importance_rank} in importance for this role.
+    REQUIRED PROFICIENCY: {proficiency_level}
+
+    DIFFICULTY: {difficulty_level}/10 ({difficulty_description})
+    TARGET LANGUAGE: {target_language}
+    TECHNOLOGY: {cv_technology}
+
+    Create working {target_language} code (8-15 lines) that:
+    - Uses {cv_technology} from the job requirements
+    - Demonstrates a concept relevant to the job requirements
+    - Is appropriately complex for {difficulty_description} level
+    - Represents realistic code they might encounter in this role
+    - Tests {proficiency_level} level understanding of {cv_technology}
+
+    **CRITICAL CONSTRAINT - LIBRARY USAGE:**
+    - Use ONLY Python built-in libraries (math, random, datetime, collections, itertools, re, json, functools, etc.)
+    - DO NOT import external libraries (numpy, pandas, flask, django, requests, beautifulsoup, etc.)
+    - If demonstrating a concept that typically uses external libraries, use pure Python implementations with built-ins
+    - Code must be executable in any standard Python environment without pip install
+
+    PROGRESSIVE DIFFICULTY STRATEGY:
+    This question is part of a progressive difficulty interview where:
+    - Early questions (Difficulty 1-4): Simple, clear code with basic patterns
+    - Middle questions (Difficulty 5-7): More sophisticated patterns, moderate complexity
+    - Later questions (Difficulty 8-10): Advanced patterns, optimization considerations, complex algorithms
+
+    Adjust the code complexity, concepts demonstrated, and depth of analysis questions accordingly.
+
+    RETURN FORMAT (IMPORTANT - Follow this exact structure):
+    **Problem Title:** [Concise, descriptive title]
+
+    **Context:** [1-2 sentence paragraph: Where would this code be used in a real system? What specific problem does it solve? Make it relevant to the job requirements.]
+
+    **Code to Analyze:**
+    ```{target_language}
+    [Working, well-written code here]
+    ```
+
+    **Your Task:** [Clear, explicit instruction on what analysis to perform. Example: "Analyze this code and provide: (1) A step-by-step explanation of what it does, (2) The time and space complexity, (3) Two specific improvements you would make and why."]
+
+    **Expected Outcome:** [Describe what form the answer should take. Example: "Provide a detailed technical explanation covering the algorithm's approach, complexity analysis (Big O notation), potential edge cases to consider, and at least two concrete improvement suggestions with justification."]
+
+    **Expected Output:** [If the code produces output when executed (with embedded test data or example calls), provide the EXACT expected output that will appear in stdout. Since test inputs are now EMBEDDED in the code itself (e.g., test calls at the bottom of the file), this output is what running the entire code file will produce. This should be the literal string, including formatting and newlines. Examples: "2500" for a calculation result, "Processing complete\nTotal: 42" for multi-line output, "[1, 4, 9, 16]" for list output. If the code is just function definitions without any print statements or execution, use "No output - function definition only". This will be used for automated output comparison.]
+
+  db_schema_prompt: |
+    Generate a database schema design or query optimization challenge based on job requirements.
+
+    JOB REQUIREMENTS:
+    {job_description}
+
+    SKILL IMPORTANCE: Database skills ({db_technology}) are ranked {importance_rank} in importance for this role.
+    REQUIRED PROFICIENCY: {proficiency_level}
+
+    DIFFICULTY: {difficulty_level}/10 ({difficulty_description})
+    DATABASE TECHNOLOGY: {db_technology}
+    COMPLEXITY LEVEL: {complexity_level}
+
+    **NOTE FOR DATABASE QUESTIONS:**
+    - Focus on schema design and query structure
+    - Use standard SQL syntax compatible with SQLite (no vendor-specific extensions)
+    - Test cases will validate SQL syntax only, not actual database execution
+    - Avoid database-specific libraries in any example code (use pure SQL)
+
+    Based on the difficulty level, create an appropriate database challenge:
+
+    DIFFICULTY 1-3 (Basic):
+    - Simple schema design (2-3 tables with basic relationships)
+    - Basic SELECT queries with WHERE clauses
+    - Simple JOINs (INNER JOIN)
+
+    DIFFICULTY 4-6 (Intermediate):
+    - Normalized schema design (3-5 tables, foreign keys, indexes)
+    - Complex queries with multiple JOINs
+    - GROUP BY, HAVING, subqueries
+    - Basic query optimization
+
+    DIFFICULTY 7-10 (Advanced/Expert):
+    - Complex schema with constraints, triggers, or stored procedures
+    - Complex multi-table JOINs with optimization considerations
+    - Window functions, CTEs, recursive queries
+    - Performance optimization, indexing strategy
+    - Handling edge cases and data integrity
+
+    PROGRESSIVE DIFFICULTY STRATEGY:
+    This question is part of a progressive difficulty interview where:
+    - Early questions: Basic schema design or simple queries
+    - Middle questions: Normalized schemas with relationships, moderately complex queries
+    - Later questions: Advanced optimization, complex business logic, performance considerations
+
+    Tailor the database challenge complexity to match the current difficulty level ({difficulty_level}/10).
+
+    RETURN FORMAT (IMPORTANT - Follow this exact structure):
+    **Problem Title:** [Concise, descriptive title]
+
+    **Context:** [Business context paragraph (2-3 sentences): What company or system is this for? What specific business problem needs solving? Why is this database solution important? Make it realistic and relevant to the job requirements.]
+
+    **Your Task:** [Explicit database task instruction. Examples:
+    - For schema design: "Design a normalized database schema with at least 3 tables. Include primary keys, foreign keys, appropriate indexes, and any necessary constraints."
+    - For query writing: "Write an optimized SQL query that retrieves X while handling Y. Explain your indexing strategy."
+    - For optimization: "Analyze and optimize the given query. Identify performance bottlenecks and provide an improved version."]
+
+    **Requirements:**
+    - [Specific requirement 1]
+    - [Specific requirement 2]
+    - [Specific requirement 3]
+
+    **Expected Outcome:** [Clear deliverable description. Example: "Provide SQL CREATE TABLE statements with proper constraints and data types, a brief explanation of the relationship design, justification for your indexing strategy, and at least one example query demonstrating how the schema would be used."]
+
+technology_categories:
+  frontend:
+    - "React"
+    - "Vue.js"
+    - "Angular"
+    - "JavaScript"
+    - "TypeScript"
+    - "HTML/CSS"
+
+  backend:
+    - "Node.js"
+    - "Python"
+    - "Java"
+    - "C#"
+    - "Go"
+    - "Ruby"
+
+  database:
+    - "SQL"
+    - "MongoDB"
+    - "PostgreSQL"
+    - "Redis"
+    - "ElasticSearch"
+
+  devops:
+    - "Docker"
+    - "Kubernetes"
+    - "AWS"
+    - "CI/CD"
+    - "Jenkins"
+
+  data:
+    - "Machine Learning"
+    - "Data Analysis"
+    - "Python"
+    - "R"
+    - "TensorFlow"
+    - "PyTorch"

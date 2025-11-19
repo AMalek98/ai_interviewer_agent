@@ -1,0 +1,401 @@
+# Enhanced Interview Prompt Templates - Phase 3 Implementation
+# Experience-focused and answer-aware prompts for intelligent interviewing
+
+difficulty_mapping:
+  1-2: "entry-level/junior"
+  3-4: "junior to mid-level"
+  5-6: "mid-level"
+  7-8: "senior-level"
+  9-10: "expert/principal-level"
+
+open_questions:
+  # NEW: Domain-technical question prompt (when industry context exists)
+  domain_technical_question_prompt: |
+    You are conducting a technical interview for a {job_title} position in the {industry} industry.
+
+    {job_context}
+
+    DIFFICULTY LEVEL: {difficulty_level}/10 ({difficulty_description})
+    TECHNOLOGY FOCUS: {technology_focus}
+
+    ⚠️ IMPORTANT: Do NOT reference the candidate's CV or past experiences. Focus on THIS ROLE's requirements.
+
+    Generate a domain-specific technical question that:
+    - Combines {technology_focus} with real-world {industry} scenarios
+    - Tests practical knowledge needed for this {job_title} role
+    - Incorporates business context and domain challenges mentioned above
+    - Is appropriate for {difficulty_description} level
+    - Asks "How would you..." or "What's your approach to..." (NOT "Tell me about your experience with...")
+
+    EXAMPLES OF GOOD DOMAIN-TECHNICAL QUESTIONS:
+    - Banking + Python: "How would you handle missing transaction data in a fraud detection pipeline using Python?"
+    - Healthcare + SQL: "How would you design SQL queries for patient records while ensuring HIPAA compliance?"
+    - E-commerce + Machine Learning: "How would you build a real-time recommendation system for product pages that handles millions of users?"
+    - Fintech + System Design: "How would you architect a payment processing system that maintains 99.99% uptime and handles regulatory compliance?"
+
+    Return ONLY the question text, no explanations or formatting.
+
+  # NEW: Generic job-technical prompt (fallback when no industry)
+  generic_job_technical_prompt: |
+    You are conducting a technical interview for a {job_title} position.
+
+    {job_context}
+
+    DIFFICULTY LEVEL: {difficulty_level}/10 ({difficulty_description})
+    TECHNOLOGY FOCUS: {technology_focus}
+
+    ⚠️ IMPORTANT: Do NOT reference the candidate's CV or past experiences. Focus on THIS ROLE's requirements.
+
+    Generate a technical question that:
+    - Tests {technology_focus} knowledge needed for this {job_title} role
+    - Focuses on practical application and problem-solving
+    - Is appropriate for {difficulty_description} level
+    - Asks about their approach to role-specific challenges
+
+    QUESTION STYLE:
+    - Ask "How would you...?" or "What's your approach to...?" (NOT "Tell me about your experience...")
+    - Focus on scenarios they'll face in THIS role
+    - Test understanding through practical examples
+
+    Return ONLY the question text, no explanations or formatting.
+
+  # NEW: Follow-up prompt for job-focused questions
+  followup_job_technical_prompt: |
+    You are conducting a technical interview follow-up question based on the candidate's previous answer.
+
+    {followup_context}
+
+    ⚠️ IMPORTANT: Dig deeper into their answer, but maintain focus on THIS ROLE's requirements (not their past experience).
+
+    Generate a natural follow-up question that:
+    - References specific technical details from their answer
+    - Explores deeper implementation aspects for this role
+    - Asks about alternative approaches, trade-offs, or edge cases
+    - Tests deeper understanding of technologies they mentioned
+    - Maintains conversational flow
+
+    EXAMPLES OF GOOD FOLLOW-UPS:
+    - "You mentioned using [technology]. How would you handle [specific edge case] in this role?"
+    - "That approach makes sense. What trade-offs would you consider when scaling it for this company?"
+    - "Interesting. How would you adapt that approach to meet [specific requirement from job]?"
+
+    Return ONLY the question text, no explanations or formatting.
+
+  # NEW: Reference answer generation prompt
+  reference_answer_generation_prompt: |
+    You are an expert technical evaluator. Generate the BEST POSSIBLE RESPONSE to the following interview question.
+
+    INTERVIEW QUESTION:
+    {question_text}
+
+    JOB CONTEXT:
+    - Position: {job_title}
+    - Seniority: {seniority_level}
+    - Technology Focus: {technology_focus}
+    - Difficulty Level: {difficulty_level}/10 ({difficulty_description})
+
+    {job_context}
+
+    TASK: Generate a comprehensive, technically accurate reference answer that:
+    1. Demonstrates expert-level understanding appropriate for {difficulty_description} level
+    2. Covers key technical concepts related to {technology_focus}
+    3. Includes practical examples and real-world considerations
+    4. Addresses potential challenges, trade-offs, and best practices
+    5. Is structured logically (approach → implementation → considerations)
+    6. Shows depth of knowledge expected for this {job_title} role
+    7. Is 150-300 words in length
+
+    REFERENCE ANSWER STRUCTURE:
+    - Start with a clear, direct approach to the problem
+    - Explain technical implementation details
+    - Discuss trade-offs, alternatives, or edge cases
+    - Mention best practices and considerations
+    - Conclude with optimization or scaling considerations (if applicable)
+
+    ⚠️ IMPORTANT: This reference answer will be used to evaluate candidate responses. Make it comprehensive but realistic for the difficulty level.
+
+    Return ONLY the reference answer text, no additional explanations or formatting.
+
+  # DEPRECATED: Old CV-focused prompts (kept for reference)
+  initial_experience_prompt: |
+    DEPRECATED: This prompt is no longer used. Questions are now job-focused, not CV-focused.
+
+  followup_experience_prompt: |
+    DEPRECATED: This prompt is no longer used. Follow-ups are now job-focused, not CV-focused.
+
+  job_focused_prompt: |
+    DEPRECATED: This prompt has been replaced by domain_technical_question_prompt and generic_job_technical_prompt.
+
+qcm_questions:
+  # Legacy prompt (kept for reference)
+  generation_prompt: |
+    You are creating a multiple-choice question for a job interview assessment.
+
+    Job Description: {job_description}
+
+    {cv_context}
+
+    Difficulty Level: {difficulty_level} ({difficulty_description})
+    Technology Focus: {technology_focus}
+    Previous Open Questions Context: {open_questions_summary}
+
+    TASK: Generate ONE multiple-choice question with 4 options (A, B, C, D) where only ONE is correct.
+
+    INSTRUCTIONS:
+    1. Focus on {technology_focus} as mentioned in both CV and job description
+    2. Create a question appropriate for {difficulty_description} level
+    3. Include practical scenarios relevant to the job role
+    4. Make distractors plausible but clearly incorrect to an expert
+    5. Base the question on real-world applications
+
+    DIFFICULTY GUIDELINES:
+    - Levels 1-2: Basic concepts and syntax
+    - Levels 3-4: Best practices and common patterns
+    - Levels 5-6: Performance optimization and architecture choices
+    - Levels 7-8: Advanced patterns and system design
+    - Levels 9-10: Expert-level optimizations and edge cases
+
+    RETURN FORMAT:
+    Question: [Your question here]
+
+    A) [Option A]
+    B) [Option B]
+    C) [Option C]
+    D) [Option D]
+
+    Correct Answer: [A/B/C/D]
+    Explanation: [Brief explanation why this is correct]
+
+  # NEW: Multiple-choice QCM prompt (multiple correct answers)
+  multiple_choice_generation_prompt: |
+    You are creating a TECHNICAL multiple-choice question with MULTIPLE CORRECT ANSWERS for a {job_title} ({seniority_level}) position.
+
+    JOB REQUIREMENTS:
+    - Position: {job_title}
+    - Seniority: {seniority_level}
+    - Domain: {domain}
+    - Industry: {industry}
+
+    REQUIRED SKILLS: {required_skills}
+    TECHNOLOGIES: {technologies}
+
+    DETAILED JOB CONTEXT:
+    {job_context}
+
+    TASK: Generate ONE deep technical multiple-choice question about {technology_focus} where MULTIPLE answers are correct
+
+    QUESTION REQUIREMENTS:
+    1. Focus EXCLUSIVELY on {technology_focus} as required by THIS job
+    2. Create a {difficulty_description} level technical question
+    3. Test practical knowledge needed for this {job_title} role
+    4. Include real-world scenarios from {domain} domain
+    5. Do NOT reference candidate's CV or past experience
+    6. Test technical depth and practical application, not memorization
+    7. Question should test multi-faceted understanding
+
+    MULTIPLE CORRECT ANSWERS REQUIREMENTS:
+    - Generate 2-3 correct answers (out of 4 options)
+    - Each correct answer should address a different aspect of the topic
+    - Incorrect answers should be plausible but clearly wrong to an expert
+    - The question text should indicate "Select ALL that apply" or similar phrasing
+    - Set is_multiple_choice to True
+    - Populate correct_answers array with all correct option letters (e.g., ["A", "C", "D"])
+
+    DIFFICULTY GUIDELINES:
+    - Levels 1-2 (Entry/Junior): Basic concepts, fundamental operations, common use cases
+    - Levels 3-4 (Junior-Mid): Best practices, common patterns, debugging, library usage
+    - Levels 5-6 (Mid): Performance optimization, architecture decisions, trade-offs, design patterns
+    - Levels 7-8 (Senior): Advanced patterns, system design, scalability, security considerations
+    - Levels 9-10 (Expert): Edge cases, deep optimizations, architectural constraints, advanced internals
+
+    IMPORTANT GUIDELINES:
+    - Make all correct options truly correct and relevant
+    - Make distractors plausible but clearly wrong to someone with the required skill level
+    - Provide exactly 4 options labeled A, B, C, D
+    - Each option must have substantive text (minimum 5 words)
+    - Provide a brief explanation (2-3 sentences) explaining which answers are correct and why
+
+    NOTE: You must return a structured response with 'question', 'options' (array with 'option' letter and 'text'), 'correct_answers' (array of correct letters), 'is_multiple_choice' (set to true), and 'explanation' fields.
+
+  # NEW: Job-focused QCM prompt (single correct answer - using structured output)
+  job_focused_generation_prompt: |
+    You are creating a TECHNICAL single-choice question for a {job_title} ({seniority_level}) position.
+
+    JOB REQUIREMENTS:
+    - Position: {job_title}
+    - Seniority: {seniority_level}
+    - Domain: {domain}
+    - Industry: {industry}
+
+    REQUIRED SKILLS: {required_skills}
+    TECHNOLOGIES: {technologies}
+
+    DETAILED JOB CONTEXT:
+    {job_context}
+
+    TASK: Generate ONE deep technical single-choice question about {technology_focus} where ONLY ONE answer is correct
+
+    QUESTION REQUIREMENTS:
+    1. Focus EXCLUSIVELY on {technology_focus} as required by THIS job
+    2. Create a {difficulty_description} level technical question
+    3. Test practical knowledge needed for this {job_title} role
+    4. Include real-world scenarios from {domain} domain
+    5. Do NOT reference candidate's CV or past experience
+    6. Test technical depth and practical application, not memorization
+    7. Question should be something they MUST know to succeed in this role
+
+    DIFFICULTY GUIDELINES:
+    - Levels 1-2 (Entry/Junior): Basic concepts, syntax, common use cases, fundamental operations
+    - Levels 3-4 (Junior-Mid): Best practices, common patterns, debugging, library usage
+    - Levels 5-6 (Mid): Performance optimization, architecture decisions, trade-offs, design patterns
+    - Levels 7-8 (Senior): Advanced patterns, system design, scalability, security considerations
+    - Levels 9-10 (Expert): Edge cases, deep optimizations, architectural constraints, advanced internals
+
+    QUESTION TYPES BY DIFFICULTY:
+    - Entry/Junior: "What does X method do?", "Which approach is correct for Y?", "What is the purpose of Z?"
+    - Mid: "What's the best approach for X scenario?", "How would you optimize Y?", "What are the implications of Z?"
+    - Senior: "What are the trade-offs between X and Y?", "How would you design Z for scale?", "What happens when X under Y conditions?"
+    - Expert: "What happens in edge case X?", "How would you optimize Y for Z constraint?", "What's the performance impact of X in Y scenario?"
+
+    IMPORTANT GUIDELINES:
+    - Make distractors plausible but clearly wrong to someone with the required skill level for this {seniority_level} position
+    - Provide exactly 4 options labeled A, B, C, D
+    - Each option must have substantive text (minimum 5 words)
+    - Ensure one clear correct answer
+    - Provide a brief explanation (1-2 sentences) for why the correct answer is right
+
+    NOTE: You must return a structured response with 'question', 'options' (array with 'option' letter and 'text'), 'correct_answer', and 'explanation' fields.
+
+coding_questions:
+  debug_prompt: |
+    Generate a debugging exercise using {target_language} and technologies from the candidate's experience.
+
+    CANDIDATE'S EXPERIENCE CONTEXT:
+    {experience_context}
+
+    JOB REQUIREMENTS:
+    {job_description}
+
+    DIFFICULTY: {difficulty_level}/10 ({difficulty_description})
+    TARGET LANGUAGE: {target_language}
+    CV TECHNOLOGY: {cv_technology}
+
+    Create a code debugging question with:
+    - {error_count} logical error(s) appropriate for {difficulty_description} level
+    - 10-15 lines of {target_language} code using {cv_technology}
+    - Realistic scenario from their experience domain
+    - Code that looks correct at first glance but has subtle bugs
+
+    ERROR TYPES BY DIFFICULTY:
+    - Easy (1-3): Syntax errors, missing returns, wrong operators, off-by-one
+    - Medium (4-7): Logic errors + edge cases, type issues, null pointer issues
+    - Hard (8-10): Complex logic + architecture + edge cases + performance issues
+
+    RETURN FORMAT:
+    **Problem Title:** [Title]
+
+    **Description:** [What the code should accomplish]
+
+    **Buggy Code:**
+    ```{target_language}
+    [The buggy code here - make it realistic and from their domain]
+    ```
+
+    **Expected Behavior:** [What should happen when the code runs correctly]
+
+    **Your Task:** Find and fix the {error_count} bug(s) in this code.
+
+    **Context:** [Brief context about where this code might be used]
+
+  explanation_prompt: |
+    Generate a code explanation exercise using {target_language} and {cv_technology}.
+
+    CANDIDATE'S EXPERIENCE:
+    {experience_context}
+
+    JOB REQUIREMENTS:
+    {job_description}
+
+    DIFFICULTY: {difficulty_level}/10 ({difficulty_description})
+    TARGET LANGUAGE: {target_language}
+    CV TECHNOLOGY: {cv_technology}
+
+    Create working {target_language} code (8-15 lines) that:
+    - Uses {cv_technology} from their experience
+    - Demonstrates a concept relevant to the job requirements
+    - Is appropriately complex for {difficulty_description} level
+    - Represents realistic code they might encounter in this role
+
+    RETURN FORMAT:
+    **Problem Title:** [Title]
+
+    **Code to Analyze:**
+    ```{target_language}
+    [Working, well-written code here]
+    ```
+
+    **Questions:**
+    1. Explain what this code does step by step
+    2. What would happen if we changed [specific line or concept]?
+    3. How would you improve this code's performance or readability?
+    4. What potential issues do you see with this approach?
+
+    **Context:** [Brief explanation of when/where this code might be used]
+
+question_focus_areas:
+  technical_experience:
+    - "technical problem-solving and implementation experience"
+    - "architecture and design decisions"
+    - "technology stack expertise"
+    - "performance optimization experience"
+
+  project_management:
+    - "project leadership and delivery"
+    - "team collaboration and communication"
+    - "requirement analysis and solution design"
+    - "process improvement and methodology"
+
+  problem_solving:
+    - "analytical thinking and troubleshooting"
+    - "creative problem-solving approaches"
+    - "handling complex technical challenges"
+    - "learning and adaptation capabilities"
+
+technology_categories:
+  frontend:
+    - "React"
+    - "Vue.js"
+    - "Angular"
+    - "JavaScript"
+    - "TypeScript"
+    - "HTML/CSS"
+
+  backend:
+    - "Node.js"
+    - "Python"
+    - "Java"
+    - "C#"
+    - "Go"
+    - "Ruby"
+
+  database:
+    - "SQL"
+    - "MongoDB"
+    - "PostgreSQL"
+    - "Redis"
+    - "ElasticSearch"
+
+  devops:
+    - "Docker"
+    - "Kubernetes"
+    - "AWS"
+    - "CI/CD"
+    - "Jenkins"
+
+  data:
+    - "Machine Learning"
+    - "Data Analysis"
+    - "Python"
+    - "R"
+    - "TensorFlow"
+    - "PyTorch"

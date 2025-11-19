@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 2,
+      "question_title": "Inefficient SQL Query Optimization for Data Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Customer 101: Average Order Value = 125.00 Customer 102: Average Order Value = 225.00 Customer 103: Average Order Value = 300.00 Customer 104: Average Order Value = 0.00",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 1,
+      "question_title": "E-commerce Order Analysis and Customer Segmentation",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Optimizing Customer Order Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table test;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table test;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Query: SELECT * FROM users WHERE age > 30 AND city = 'New York' Data Size: 10000 Execution Time: 117.00 seconds Potential Optimization: Consider adding an index to relevant columns.",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table test;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table test;\n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

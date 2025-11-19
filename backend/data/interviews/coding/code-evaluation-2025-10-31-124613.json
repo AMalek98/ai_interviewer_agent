@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "31-10-2025",
+  "overall_score": 1.2,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "score": 2,
+      "feedback": [
+        "The candidate started by creating the basic tables needed for the problem.",
+        "The response lacks any column definitions, relationships, or constraints, making it an incomplete schema.",
+        "The response demonstrates a minimal understanding of database schema creation, but requires significant improvement to address the problem requirements."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\nError: near line 4: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Data Validation and Cleaning for User Profiles",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" and does not address the problem requirements.",
+        "The candidate needs to implement the data validation and cleaning logic as described in the problem.",
+        "This response demonstrates a lack of understanding of the problem."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Invalid email format: bob@example Invalid age: 110 INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 30); INSERT INTO users (name, email, age) VALUES ('charlie', 'charlie@example.com', 60); INSERT INTO users (name, email, age) VALUES ('Eve O''Malley', 'eve@example.com', 25);",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The code has a syntax error as it's missing the table name and column definitions.",
+        "The response demonstrates a very basic understanding of SQL table creation."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" and does not address the prompt's requirement to simulate and optimize a slow query.",
+        "The candidate provided a trivial response without attempting to address the core problem of simulating and optimizing a query.",
+        "This response demonstrates a lack of understanding of the problem and requires significant improvement."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "No Index: Results: [999], Time: 0.000095 seconds With Index: Results: [999], Time: 0.000014 seconds Index usage improved performance.",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Retention Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The response is incomplete and lacks any meaningful information.",
+        "The code has a syntax error and the explanation 'ar' is insufficient to understand the candidate's thought process.",
+        "The candidate needs to demonstrate a basic understanding of SQL syntax and database schema design."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-10-31T12:48:39.995358"
+}

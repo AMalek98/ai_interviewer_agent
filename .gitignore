@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment variables (secrets)
+.env
+*.env
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# Build artifacts
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# LangGraph cache
+.langgraph_api/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+*.bak
+*.tmp
+
+# NOTE: cache, interviews, reports, and data directories ARE tracked in git
+# This is intentional per project requirements

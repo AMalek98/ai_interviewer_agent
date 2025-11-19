@@ -1,0 +1,274 @@
+{
+  "primary_skills": [
+    {
+      "skill_name": "SQL",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 4,
+      "context_clues": [
+        "Write complex and optimized SQL queries",
+        "Proficiency in SQL and database scripting languages",
+        "relational database (MySQL, PostgreSQL, Oracle, SQL Server)"
+      ]
+    },
+    {
+      "skill_name": "Database Design",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Design, develop, and maintain high-performance databases",
+        "Strong understanding of data modeling, indexing, normalization, and query optimization"
+      ]
+    },
+    {
+      "skill_name": "Database Performance Tuning",
+      "importance_rank": 1,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "optimize query execution using performance tuning tools",
+        "Experience with ETL processes, data pipelines, and performance tuning"
+      ]
+    },
+    {
+      "skill_name": "Data Modeling",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "passionate about data modeling",
+        "Strong understanding of data modeling, indexing, normalization, and query optimization"
+      ]
+    }
+  ],
+  "secondary_skills": [
+    {
+      "skill_name": "NoSQL Databases",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "large-scale database systems across SQL and NoSQL technologies",
+        "one NoSQL database (MongoDB, Cassandra, DynamoDB, etc.)"
+      ]
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Manage database systems such as PostgreSQL",
+        "relational database (MySQL, PostgreSQL, Oracle, SQL Server)"
+      ]
+    },
+    {
+      "skill_name": "MongoDB",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Manage database systems such as MongoDB",
+        "one NoSQL database (MongoDB, Cassandra, DynamoDB, etc.)"
+      ]
+    },
+    {
+      "skill_name": "Data Replication",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 1,
+      "context_clues": [
+        "Implement data replication, partitioning, and sharding strategies to improve scalability and performance."
+      ]
+    },
+    {
+      "skill_name": "CI/CD",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "devops",
+      "mentions_count": 1,
+      "context_clues": [
+        "Automate database backups, versioning, and deployments using modern CI/CD practices."
+      ]
+    }
+  ],
+  "tertiary_skills": [
+    {
+      "skill_name": "Cloud Database Services",
+      "importance_rank": 3,
+      "required_proficiency_level": "basic",
+      "category": "cloud",
+      "mentions_count": 1,
+      "context_clues": [
+        "Familiarity with cloud database services (AWS RDS, Azure SQL, Google Cloud Firestore, etc.) is a plus."
+      ]
+    },
+    {
+      "skill_name": "Database Monitoring Tools",
+      "importance_rank": 3,
+      "required_proficiency_level": "basic",
+      "category": "database",
+      "mentions_count": 1,
+      "context_clues": [
+        "Knowledge of database monitoring tools (e.g., Prometheus, Grafana, New Relic) preferred."
+      ]
+    }
+  ],
+  "database_requirement": {
+    "has_db_requirement": true,
+    "db_technologies": [
+      "SQL",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Oracle",
+      "Cassandra",
+      "DynamoDB"
+    ],
+    "complexity_level": "advanced",
+    "specific_skills": [
+      "data modeling",
+      "indexing",
+      "normalization",
+      "query optimization",
+      "data replication",
+      "partitioning",
+      "sharding",
+      "performance tuning",
+      "data integrity",
+      "access control",
+      "security"
+    ]
+  },
+  "all_ranked_skills": [
+    {
+      "skill_name": "SQL",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 4,
+      "context_clues": [
+        "Write complex and optimized SQL queries",
+        "Proficiency in SQL and database scripting languages",
+        "relational database (MySQL, PostgreSQL, Oracle, SQL Server)"
+      ]
+    },
+    {
+      "skill_name": "Database Design",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Design, develop, and maintain high-performance databases",
+        "Strong understanding of data modeling, indexing, normalization, and query optimization"
+      ]
+    },
+    {
+      "skill_name": "Database Performance Tuning",
+      "importance_rank": 1,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "optimize query execution using performance tuning tools",
+        "Experience with ETL processes, data pipelines, and performance tuning"
+      ]
+    },
+    {
+      "skill_name": "Data Modeling",
+      "importance_rank": 1,
+      "required_proficiency_level": "advanced",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "passionate about data modeling",
+        "Strong understanding of data modeling, indexing, normalization, and query optimization"
+      ]
+    },
+    {
+      "skill_name": "NoSQL Databases",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "large-scale database systems across SQL and NoSQL technologies",
+        "one NoSQL database (MongoDB, Cassandra, DynamoDB, etc.)"
+      ]
+    },
+    {
+      "skill_name": "PostgreSQL",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Manage database systems such as PostgreSQL",
+        "relational database (MySQL, PostgreSQL, Oracle, SQL Server)"
+      ]
+    },
+    {
+      "skill_name": "MongoDB",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 2,
+      "context_clues": [
+        "Manage database systems such as MongoDB",
+        "one NoSQL database (MongoDB, Cassandra, DynamoDB, etc.)"
+      ]
+    },
+    {
+      "skill_name": "Data Replication",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "database",
+      "mentions_count": 1,
+      "context_clues": [
+        "Implement data replication, partitioning, and sharding strategies to improve scalability and performance."
+      ]
+    },
+    {
+      "skill_name": "CI/CD",
+      "importance_rank": 2,
+      "required_proficiency_level": "intermediate",
+      "category": "devops",
+      "mentions_count": 1,
+      "context_clues": [
+        "Automate database backups, versioning, and deployments using modern CI/CD practices."
+      ]
+    },
+    {
+      "skill_name": "Cloud Database Services",
+      "importance_rank": 3,
+      "required_proficiency_level": "basic",
+      "category": "cloud",
+      "mentions_count": 1,
+      "context_clues": [
+        "Familiarity with cloud database services (AWS RDS, Azure SQL, Google Cloud Firestore, etc.) is a plus."
+      ]
+    },
+    {
+      "skill_name": "Database Monitoring Tools",
+      "importance_rank": 3,
+      "required_proficiency_level": "basic",
+      "category": "database",
+      "mentions_count": 1,
+      "context_clues": [
+        "Knowledge of database monitoring tools (e.g., Prometheus, Grafana, New Relic) preferred."
+      ]
+    }
+  ],
+  "job_level": "mid-level",
+  "overall_difficulty": 7
+}

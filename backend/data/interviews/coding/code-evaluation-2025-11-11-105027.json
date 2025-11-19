@@ -1,0 +1,26 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, indicating a basic understanding of the task.",
+        "The provided code 'create table;' is incomplete and syntactically incorrect, resulting in a compilation failure.",
+        "The response demonstrates a lack of SQL knowledge and requires significant improvement."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T10:52:26.115483"
+}

@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table x;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table x;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Query: SELECT * FROM orders WHERE customer_id = 123 AND order_date > '2023-01-01' Estimated Execution Time: 10500.00 Optimization Suggestion: Consider adding indexes to relevant columns.",
+      "candidate_code": "print(\"hi\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hi\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table xs; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table xs; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Inefficient SQL Query Generation for Data Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Executing query: SELECT * FROM products WHERE product_id IN (1, 2, 3); Results: [{'product_id': 1, 'name': 'Product A'}, {'product_id': 2, 'name': 'Product B'}, {'product_id': 3, 'name': 'Product C'}] Executing query: SELECT * FROM products WHERE product_id IN (4, 5); Results: [{'product_id': 4, 'name': 'Product D'}, {'product_id': 5, 'name': 'Product E'}]",
+      "candidate_code": "print (\"hell oworld\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint (\"hell oworld\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 1,
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table sx;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table sx;\n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

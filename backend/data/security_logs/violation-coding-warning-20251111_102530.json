@@ -1,0 +1,10 @@
+{
+  "type": "fullscreen_exit",
+  "timestamp": "2025-11-11T09:25:30.535Z",
+  "sessionId": "coding-1762853084284",
+  "interviewType": "coding",
+  "violationCount": 1,
+  "isWarning": true,
+  "server_timestamp": "2025-11-11T10:25:30.539724",
+  "logged": true
+}

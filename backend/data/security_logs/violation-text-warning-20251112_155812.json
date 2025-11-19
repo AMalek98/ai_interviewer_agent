@@ -1,0 +1,10 @@
+{
+  "type": "fullscreen_exit",
+  "timestamp": "2025-11-12T14:58:12.504Z",
+  "sessionId": "text-1762959337484",
+  "interviewType": "text",
+  "violationCount": 1,
+  "isWarning": true,
+  "server_timestamp": "2025-11-12T15:58:12.508570",
+  "logged": true
+}

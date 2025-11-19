@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 2,
+      "question_title": "Data Validation and Aggregation for User Activity",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "{1: 10, 2: 15}",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 1,
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table test; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table test; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table xs;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table xs;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Index Usage: 1, Execution Time: 529.93 Index Usage: 2, Execution Time: 346.76 Index Usage: 3, Execution Time: 262.13 Index Usage: 4, Execution Time: 211.24 Recommended Index Usage: 4",
+      "candidate_code": "print(\"hi\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hi\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Event Attendance Analysis for a Conference Platform",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table xop; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table xop; \n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

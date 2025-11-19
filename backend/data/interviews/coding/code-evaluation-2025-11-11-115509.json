@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Data Validation and Aggregation for User Activity",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code does not address the problem requirements at all.",
+        "The candidate needs to implement the data validation and aggregation logic.",
+        "This response demonstrates a lack of understanding of the problem."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "{1: 10, 2: 15}",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code provided has a syntax error and does not create a valid table schema.",
+        "The candidate did not provide any table schema or explanation related to the order fulfillment performance analysis question.",
+        "The response demonstrates a lack of understanding of the problem and basic SQL syntax."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code provided is incomplete and does not address the problem.",
+        "The candidate needs to create a database schema that addresses the order fulfillment optimization problem, including tables for orders, products, customers, and fulfillment centers.",
+        "The response demonstrates a lack of understanding of database schema design principles."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hi\" and does not address the problem of simulating and optimizing slow queries.",
+        "The candidate's explanation \"ss\" is insufficient to understand their approach or understanding of the problem.",
+        "The response demonstrates a lack of understanding of the problem and provides no relevant code or explanation."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Index Usage: 1, Execution Time: 529.93 Index Usage: 2, Execution Time: 346.76 Index Usage: 3, Execution Time: 262.13 Index Usage: 4, Execution Time: 211.24 Recommended Index Usage: 4",
+          "actual_output": "hi",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Event Attendance Analysis for a Conference Platform",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code provided is syntactically incorrect and does not create a valid table.",
+        "The candidate did not provide a schema definition or any explanation of the problem.",
+        "The response demonstrates a lack of understanding of database schema design."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T11:57:58.013775"
+}

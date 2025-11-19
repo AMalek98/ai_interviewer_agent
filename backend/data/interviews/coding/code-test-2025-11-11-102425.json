@@ -1,0 +1,16 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\naa",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\naa"
+    }
+  ]
+}

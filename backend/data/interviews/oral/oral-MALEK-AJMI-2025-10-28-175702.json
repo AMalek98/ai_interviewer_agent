@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "candidate_name": "MALEK AJMI",
+    "date": "2025-10-28",
+    "duration_minutes": 8.4,
+    "total_turns": 14,
+    "difficulty_score": 6,
+    "topics_covered": [
+      "database",
+      "design",
+      "deployment",
+      "project"
+    ],
+    "job_description": "Job Title: Database Engineer / Data Management Specialist\n\nLocation: Hybrid / Remote / On-site (Flexible)\nEmployment Type: Full-Time\n\nAbout the Role\n\nWe are seeking a highly skilled Database Engineer ..."
+  },
+  "conversation": [
+    {
+      "speaker": "interviewer",
+      "text": "Hello! Thank you for joining us today. To start, could you please introduce yourself and tell me a bit about your background?",
+      "timestamp": "2025-10-28T17:57:02.062400",
+      "turn": 0,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "my name is melakashmi and I have master's degree in Business Analytics",
+      "timestamp": "2025-10-28T17:57:28.291635",
+      "turn": 1,
+      "audio_file": "oral-interview-q0-2025-10-28T16-57-28.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time you were working on a data science project with a team and encountered a significant disagreement on the best approach to solve a problem. How did you navigate that disagreement, and what was the outcome?",
+      "timestamp": "2025-10-28T17:57:29.680360",
+      "turn": 2,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I never get the disagreement with researchers and the proof of my work and my point of view",
+      "timestamp": "2025-10-28T17:57:55.233795",
+      "turn": 2,
+      "audio_file": "oral-interview-q1-2025-10-28T16-57-55.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Describe a situation where you had to solve a complex data science problem with limited resources or data. What creative solutions did you come up with, and what was the impact of your approach?",
+      "timestamp": "2025-10-28T17:57:57.214787",
+      "turn": 3,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was during my end of status project I had the new resources for the data so I had to collect the real data from a doctor",
+      "timestamp": "2025-10-28T17:58:25.234223",
+      "turn": 3,
+      "audio_file": "oral-interview-q2-2025-10-28T16-58-25.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Describe a situation where a project's requirements changed significantly mid-way through, requiring you to adapt your data science approach. What steps did you take to understand the new requirements, adjust your plan, and communicate those changes to your team or stakeholders?",
+      "timestamp": "2025-10-28T17:58:26.250426",
+      "turn": 4,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "this happened to me during my development of the AI restaurant customer service we used long graph and I had no idea how it works I am invested in dedicated courses it paid off and we delivered the product in the time",
+      "timestamp": "2025-10-28T17:59:03.535141",
+      "turn": 4,
+      "audio_file": "oral-interview-q3-2025-10-28T16-59-03.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for sharing those experiences, Malek. It sounds like you've encountered some interesting challenges and found creative solutions. Now, let's dive a bit deeper into your practical experience. Could you walk me through one of the projects you're most proud of from your time at Metavoria, highlighting the problem you were trying to solve, your role, and the technologies you utilized?",
+      "timestamp": "2025-10-28T17:59:04.789438",
+      "turn": 5,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was my first project the restaurant customer service chain and",
+      "timestamp": "2025-10-28T17:59:34.710924",
+      "turn": 5,
+      "audio_file": "oral-interview-q4-2025-10-28T16-59-34.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Building on your experience with the restaurant customer service chain at Metavoria, can you tell me more about your specific role in that project? What were your key responsibilities, what challenges did you face in fulfilling them, and what did you learn about yourself or the process during that time?",
+      "timestamp": "2025-10-28T17:59:35.853263",
+      "turn": 6,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I was the AI product developer I had to develop from A to Z the project and the also I had to take care of the deployment",
+      "timestamp": "2025-10-28T18:00:08.602295",
+      "turn": 6,
+      "audio_file": "oral-interview-q5-2025-10-28T17-00-08.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thinking back to the AI restaurant customer service project, what was the biggest surprise or unexpected outcome you encountered, and how did that experience shape your approach to future AI product development projects?",
+      "timestamp": "2025-10-28T18:00:09.623642",
+      "turn": 7,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was out to handle the complex input I mean by a complex input is the order is made by two different items I had to find a solution and do paralyze the workflow",
+      "timestamp": "2025-10-28T18:00:42.181898",
+      "turn": 7,
+      "audio_file": "oral-interview-q6-2025-10-28T17-00-42.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Malek, you mentioned you were the AI product developer for the restaurant customer service chain, handling everything from A to Z. Looking back, what achievement from that project are you most proud of, and what impact did it have on the restaurant chain's operations or customer experience? What were some of the biggest hurdles you had to overcome to achieve that, and what did you learn about your capabilities or the product development process as a result?",
+      "timestamp": "2025-10-28T18:00:43.402509",
+      "turn": 8,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was a very challenging project because it was my first and also it was my first achievement too because I managed to deliver the product at time that's it",
+      "timestamp": "2025-10-28T18:01:25.835407",
+      "turn": 8,
+      "audio_file": "oral-interview-q7-2025-10-28T17-01-25.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Malek, considering your experience at Metavoria, can you describe a time when you faced a significant challenge in deploying or maintaining an AI model, and how you overcame it? What impact did your solution have on the project or the team, and what did you learn about model deployment or maintenance from that experience?",
+      "timestamp": "2025-10-28T18:01:26.812457",
+      "turn": 9,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "mother deployment is not the is a little bit challenging because it depends on the technology you use sometimes you use a different technology and it is a complex to adapting deployment not like using it in the localhost so I had to learn dogs for drinking and get repo",
+      "timestamp": "2025-10-28T18:02:11.708923",
+      "turn": 9,
+      "audio_file": "oral-interview-q8-2025-10-28T17-02-11.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for detailing your experience with deployment, Malek. Given your background in AI product development and your experience with technologies like LangChain and PgVector, can you tell me what specifically interests you about this particular role and how you see your skills and experience aligning with the requirements we've outlined?",
+      "timestamp": "2025-10-28T18:02:13.567098",
+      "turn": 10,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I have a civilized my experience in in the living area products is good because I know how to use a real databases like same as semantic surge also vectorize database real data I have too many manipulator data like images videos text that's it",
+      "timestamp": "2025-10-28T18:03:00.106258",
+      "turn": 10,
+      "audio_file": "oral-interview-q9-2025-10-28T17-03-00.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role requires a strong understanding of database performance tuning. Can you describe a time when you identified and resolved a significant database performance bottleneck, detailing the tools and techniques you used, and the impact your solution had on application performance or user experience?",
+      "timestamp": "2025-10-28T18:03:04.827770",
+      "turn": 11,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was when retrieving the item from our database we were supposed to dress the the classic way to retrieve the item is it wasn't good enough in matter of time efficiency so we use the vector database and Drug system via link chain and that's how we manage it to improve our time efficiency by 60%",
+      "timestamp": "2025-10-28T18:03:50.629300",
+      "turn": 11,
+      "audio_file": "oral-interview-q10-2025-10-28T17-03-50.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role involves a lot of collaboration with different teams. Can you describe your preferred style of collaboration, and give an example of how you've successfully worked with backend developers or DevOps engineers to ensure smooth data flow across systems?",
+      "timestamp": "2025-10-28T18:03:51.710865",
+      "turn": 12,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "my Approach of communication is not to use technical words with other colleagues especially they are not in the domain for example we can't use python keywords with someone who is not familiar with patient or it won't understand this and they don't understand the logic of the model",
+      "timestamp": "2025-10-28T18:04:35.052701",
+      "turn": 12,
+      "audio_file": "oral-interview-q11-2025-10-28T17-04-35.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Considering the database engineer role involves a blend of database design, performance tuning, and collaboration, what aspects of this role are you most excited about tackling, and how do you envision your previous experience with AI product development and data manipulation contributing to your success in ensuring the reliability and scalability of our database systems?",
+      "timestamp": "2025-10-28T18:04:39.217297",
+      "turn": 13,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I'm excited about this this road because it it has it helps me if all of us that the engineer with my skills in the designs would make me will take me to another level",
+      "timestamp": "2025-10-28T18:05:18.003410",
+      "turn": 13,
+      "audio_file": "oral-interview-q12-2025-10-28T17-05-17.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Do you have any questions for us?",
+      "timestamp": "2025-10-28T18:05:18.004416",
+      "turn": 14,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "no thank you",
+      "timestamp": "2025-10-28T18:05:25.720464",
+      "turn": 14,
+      "audio_file": "oral-interview-q13-2025-10-28T17-05-25.webm"
+    }
+  ]
+}

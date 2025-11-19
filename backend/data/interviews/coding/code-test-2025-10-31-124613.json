@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "31-10-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table Customers;\r\ncreate table Orders;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table Customers;\r\ncreate table Orders;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Data Validation and Cleaning for User Profiles",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Invalid email format: bob@example Invalid age: 110 INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 30); INSERT INTO users (name, email, age) VALUES ('charlie', 'charlie@example.com', 60); INSERT INTO users (name, email, age) VALUES ('Eve O''Malley', 'eve@example.com', 25);",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Order Fulfillment Performance Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table Customers;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table Customers;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "No Index: Results: [999], Time: 0.000095 seconds With Index: Results: [999], Time: 0.000014 seconds Index usage improved performance.",
+      "candidate_code": "print (\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint (\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Customer Retention Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nar",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nar"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "07-11-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Customer Order Analysis and Reporting Schema",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Inefficient SQL Query Generation for Data Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Generated Query: SELECT product_name, SUM(sales_amount) FROM sales_table WHERE category = ? AND sale_date BETWEEN ? AND ? GROUP BY product_name Sales Data: [('Laptop', 1500), ('Smartphone', 1000), ('Tablet', 500)]",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 1,
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table ss;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table ss;\n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 2,
+      "question_title": "Data Validation and Filtering for Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Order ID: 1, Customer ID: 101, Total Value: 50.0 Order ID: 4, Customer ID: 103, Total Value: 100.0 Order ID: 5, Customer ID: 102, Total Value: 100.0",
+      "candidate_code": "print(\"hi\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hi\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 3,
+      "question_title": "Optimizing Customer Order Analysis",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table ok; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table ok; \n\nDESIGN EXPLANATION:\nss"
+    },
+    {
+      "question_id": 4,
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "Initial query time: 35.78 seconds Optimized query time: 17.89 seconds Improvement: 17.89 seconds",
+      "candidate_code": "print(\"hello\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 5,
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing Campaigns",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table op; \n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table op; \n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

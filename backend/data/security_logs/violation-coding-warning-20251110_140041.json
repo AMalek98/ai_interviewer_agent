@@ -1,0 +1,10 @@
+{
+  "type": "copy_attempt",
+  "timestamp": "2025-11-10T13:00:41.724Z",
+  "sessionId": "coding-1762779609344",
+  "interviewType": "coding",
+  "violationCount": 1,
+  "isWarning": true,
+  "server_timestamp": "2025-11-10T14:00:41.731461",
+  "logged": true
+}

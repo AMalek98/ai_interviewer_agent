@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Interviewer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .file-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        
+        input[type="file"] {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background: linear-gradient(135deg, #5a0cb0 0%, #1e68e0 100%);
+        }
+        
+        button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        #interview-section {
+            display: none;
+        }
+        
+        .question-card {
+            background-color: #e9f0ff;
+            border-left: 5px solid #2575fc;
+            padding: 1.2rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .record-btn {
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            flex: 1;
+        }
+        
+        .record-btn:hover {
+            background: linear-gradient(135deg, #e73c61 0%, #e64326 100%);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            flex: 1;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #0e8b81 0%, #30d670 100%);
+        }
+        
+        .progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        
+        .progress-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .step-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .step-label {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        .active .step-circle {
+            background-color: #2575fc;
+        }
+        
+        .completed .step-circle {
+            background-color: #11998e;
+        }
+        
+        .active .step-label {
+            color: #2575fc;
+            font-weight: 600;
+        }
+        
+        .recording-indicator {
+            display: none;
+            color: #ff416c;
+            font-weight: 600;
+            text-align: center;
+            margin: 1rem 0;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        
+        .transcript {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-top: 1rem;
+            min-height: 100px;
+        }
+        
+        .completion-message {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #11998e;
+            margin-top: 2rem;
+        }
+
+        /* Phase 6: Enhanced progress indicators for 15-question flow */
+        .phase-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #f8f9ff;
+            border-radius: 10px;
+        }
+
+        .phase-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 8px;
+            min-width: 100px;
+        }
+
+        .phase-section.active {
+            background-color: #e9f0ff;
+            border: 2px solid #2575fc;
+        }
+
+        .phase-section.completed {
+            background-color: #e8f5e8;
+            border: 2px solid #11998e;
+        }
+
+        .phase-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .phase-progress {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Experience focus indicator */
+        .experience-focus {
+            background-color: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .experience-focus.active {
+            background-color: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            color: #f57c00;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-focus.active .experience-title {
+            color: #1976d2;
+        }
+
+        .experience-detail {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Answer context indicator */
+        .answer-context {
+            background-color: #f3e5f5;
+            border: 1px solid #9c27b0;
+            border-radius: 6px;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .answer-context .context-label {
+            font-weight: 600;
+            color: #7b1fa2;
+            margin-bottom: 0.3rem;
+        }
+
+        .answer-context .context-detail {
+            color: #666;
+            font-style: italic;
+        }
+
+        .loading-indicator {
+            display: none;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #2575fc;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Voice Interviewer</h1>
+            <p>Upload your documents and start your interactive voice interview</p>
+        </header>
+        
+        <!-- File Upload Section -->
+        <div id="upload-section" class="card">
+            <h2>Upload Interview Documents</h2>
+            <form id="upload-form" class="upload-form">
+                <div class="file-input-group">
+                    <label for="job-description">Job Description (TXT file)</label>
+                    <input type="file" id="job-description" name="job_description" accept=".txt" required>
+                </div>
+                
+                <div class="file-input-group">
+                    <label for="cv-summary">CV Summary (TXT file)</label>
+                    <input type="file" id="cv-summary" name="cv_summary" accept=".txt" required>
+                </div>
+                
+                <button type="submit" id="start-btn">Start Interview</button>
+            </form>
+            
+            <div id="loading-indicator" class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Preparing your interview questions...</p>
+            </div>
+        </div>
+        
+        <!-- Interview Section -->
+        <div id="interview-section">
+            <div class="progress">
+                <div class="progress-step" id="step-1">
+                    <div class="step-circle">1</div>
+                    <div class="step-label">Question 1</div>
+                </div>
+                <div class="progress-step" id="step-2">
+                    <div class="step-circle">2</div>
+                    <div class="step-label">Question 2</div>
+                </div>
+                <div class="progress-step" id="step-3">
+                    <div class="step-circle">3</div>
+                    <div class="step-label">Question 3</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Interview Question <span id="question-number">1</span>/3</h2>
+                
+                <div class="question-card" id="current-question">
+                    Loading question...
+                </div>
+                
+                <div class="recording-indicator" id="recording-indicator">
+                    🎙️ Recording your answer... (<span id="recording-timer">30</span>s remaining)
+                </div>
+                
+                <div class="transcript" id="transcript">
+                    Your answer will appear here after recording
+                </div>
+                
+                <div class="controls">
+                    <button id="record-btn" class="record-btn">Start Recording</button>
+                    <button id="submit-btn" class="submit-btn" disabled>Submit Answer</button>
+                </div>
+            </div>
+            
+            <div id="completion-message" class="completion-message" style="display:none;">
+                Interview completed! Thank you for your participation.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const uploadForm = document.getElementById('upload-form');
+            const uploadSection = document.getElementById('upload-section');
+            const interviewSection = document.getElementById('interview-section');
+            const currentQuestion = document.getElementById('current-question');
+            const questionNumber = document.getElementById('question-number');
+            const recordBtn = document.getElementById('record-btn');
+            const submitBtn = document.getElementById('submit-btn');
+            const recordingIndicator = document.getElementById('recording-indicator');
+            const recordingTimer = document.getElementById('recording-timer');
+            const transcript = document.getElementById('transcript');
+            const completionMessage = document.getElementById('completion-message');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const startBtn = document.getElementById('start-btn');
+            
+            let audioElement = null;
+            let currentTranscript = '';
+            let recordingInterval = null;
+            
+            // Handle file upload and start interview
+            uploadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Disable the start button and show loading
+                startBtn.disabled = true;
+                loadingIndicator.style.display = 'block';
+                
+                // Create a copy of the form data to prevent file references from changing
+                const jobFile = document.getElementById('job-description').files[0];
+                const cvFile = document.getElementById('cv-summary').files[0];
+                
+                // Convert files to blobs to ensure they don't change during upload
+                const jobBlob = new Blob([jobFile], { type: jobFile.type });
+                const cvBlob = new Blob([cvFile], { type: cvFile.type });
+                
+                // Create a new FormData object
+                const formData = new FormData();
+                formData.append('job_description', jobBlob, jobFile.name);
+                formData.append('cv_summary', cvBlob, cvFile.name);
+                
+                fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.error) {
+                        alert('Error: ' + data.error);
+                        startBtn.disabled = false;
+                        loadingIndicator.style.display = 'none';
+                        return;
+                    }
+                    
+                    console.log('Interview started successfully:', data);
+                    
+                    // Hide upload section and show interview section
+                    uploadSection.style.display = 'none';
+                    interviewSection.style.display = 'block';
+                    
+                    // Display first question
+                    currentQuestion.textContent = data.question;
+                    questionNumber.textContent = data.question_count;
+                    
+                    // Update progress indicator
+                    updateProgressIndicator(data.question_count);
+                    
+                    // Play audio
+                    playQuestionAudio(data.audio_url);
+                })
+                .catch(error => {
+                    console.error('Error during upload:', error);
+                    alert('An error occurred during file upload. Please try again.');
+                    startBtn.disabled = false;
+                    loadingIndicator.style.display = 'none';
+                });
+            });
+            
+            // Handle recording button
+            recordBtn.addEventListener('click', function() {
+                if (recordBtn.textContent === 'Start Recording') {
+                    startRecording();
+                } else {
+                    stopRecording();
+                }
+            });
+            
+            // Handle submit button
+            submitBtn.addEventListener('click', function() {
+                submitAnswer();
+            });
+            
+            function startRecording() {
+                recordBtn.textContent = 'Stop Recording';
+                recordBtn.style.background = 'linear-gradient(135deg, #e73c61 0%, #e64326 100%)';
+                recordingIndicator.style.display = 'block';
+                transcript.textContent = 'Recording in progress...';
+                submitBtn.disabled = true;
+                
+                // Set timer for 30 seconds
+                let timeLeft = 30;
+                recordingTimer.textContent = timeLeft;
+                
+                recordingInterval = setInterval(() => {
+                    timeLeft--;
+                    recordingTimer.textContent = timeLeft;
+                    
+                    if (timeLeft <= 0) {
+                        stopRecording();
+                    }
+                }, 1000);
+                
+                // Start recording via API
+                fetch('/record', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ duration: 30 })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        currentTranscript = data.transcription;
+                        transcript.textContent = currentTranscript;
+                        submitBtn.disabled = false;
+                        
+                        // Automatically stop recording UI if it's still active
+                        if (recordBtn.textContent === 'Stop Recording') {
+                            stopRecording(false); // Don't make another API call
+                        }
+                    } else {
+                        alert('Recording error: ' + data.error);
+                        stopRecording(false);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error during recording:', error);
+                    alert('An error occurred during recording.');
+                    stopRecording(false);
+                });
+            }
+            
+            function stopRecording(makeApiCall = true) {
+                recordBtn.textContent = 'Start Recording';
+                recordBtn.style.background = 'linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)';
+                recordingIndicator.style.display = 'none';
+                clearInterval(recordingInterval);
+                
+                // If we should make an API call (only if manually stopped)
+                if (makeApiCall) {
+                    transcript.textContent = 'Processing your answer...';
+                    
+                    // Call API to stop recording early
+                    fetch('/record', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ duration: 5 }) // Short duration to essentially stop
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            currentTranscript = data.transcription;
+                            transcript.textContent = currentTranscript;
+                            submitBtn.disabled = false;
+                        } else {
+                            alert('Recording error: ' + data.error);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error during recording stop:', error);
+                        alert('An error occurred during recording.');
+                    });
+                }
+            }
+            
+            function submitAnswer() {
+                submitBtn.disabled = true;
+                recordBtn.disabled = true;
+                
+                fetch('/submit_response', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ response: currentTranscript })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.complete) {
+                        // Interview is complete
+                        completionMessage.style.display = 'block';
+                        document.querySelector('.card').style.display = 'none';
+                    } else {
+                        // Display next question
+                        currentQuestion.textContent = data.question;
+                        questionNumber.textContent = data.question_count;
+                        
+                        // Reset transcript
+                        transcript.textContent = 'Your answer will appear here after recording';
+                        currentTranscript = '';
+                        
+                        // Update progress indicator
+                        updateProgressIndicator(data.question_count);
+                        
+                        // Play audio
+                        playQuestionAudio(data.audio_url);
+                        
+                        // Re-enable buttons
+                        submitBtn.disabled = true;
+                        recordBtn.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error during submission:', error);
+                    alert('An error occurred. Please try again.');
+                    submitBtn.disabled = false;
+                    recordBtn.disabled = false;
+                });
+            }
+            
+            function playQuestionAudio(audioUrl) {
+                if (audioElement) {
+                    audioElement.pause();
+                }
+                
+                // Add a timestamp to prevent caching issues
+                const timestamp = new Date().getTime();
+                const audioUrlWithTimestamp = `${audioUrl}?t=${timestamp}`;
+                
+                audioElement = new Audio(audioUrlWithTimestamp);
+                
+                // Add error handling for audio playback
+                audioElement.addEventListener('error', function(e) {
+                    console.error('Audio playback error:', e);
+                    alert('Failed to play audio question. The interview will continue, but you may need to read the question yourself.');
+                });
+                
+                audioElement.play().catch(error => {
+                    console.error('Error playing audio:', error);
+                });
+            }
+            
+            function updateProgressIndicator(questionNumber) {
+                // Reset all steps
+                document.querySelectorAll('.progress-step').forEach(step => {
+                    step.classList.remove('active', 'completed');
+                });
+                
+                // Mark current and previous steps
+                for (let i = 1; i <= 3; i++) {
+                    const step = document.getElementById(`step-${i}`);
+                    if (i < questionNumber) {
+                        step.classList.add('completed');
+                    } else if (i === questionNumber) {
+                        step.classList.add('active');
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

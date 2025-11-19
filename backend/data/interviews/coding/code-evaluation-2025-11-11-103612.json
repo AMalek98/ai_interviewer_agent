@@ -1,0 +1,94 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the prompt at all.",
+        "The code fails to compile and lacks any database schema or SQL queries.",
+        "The response demonstrates a complete lack of understanding of the question."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \"FIXED\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The provided code 'create table;' is incomplete and syntactically incorrect, lacking table name, column definitions, and constraints.",
+        "The response demonstrates a very basic understanding of database schema creation, requiring significant improvement."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The response only contains 'create table;' which is insufficient to create any tables.",
+        "The candidate needs to provide a complete and valid SQL script to define the database schema.",
+        "The response demonstrates a lack of understanding of database schema creation."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the database question at all.",
+        "The explanation is missing, indicating a lack of understanding of the problem.",
+        "This submission demonstrates a complete failure to address the prompt."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \"FIXED\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, indicating an understanding of the question's requirement.",
+        "The provided code 'create table;' is incomplete and syntactically incorrect, leading to compilation failure.",
+        "The candidate needs to learn the correct SQL syntax for creating tables and defining their schema."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T10:43:34.276493"
+}

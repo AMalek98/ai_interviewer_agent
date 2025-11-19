@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "27-10-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Order and Product Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The 'create table;' statement is incomplete and syntactically incorrect, leading to compilation failure.",
+        "The candidate needs to learn the correct syntax for creating tables in SQL."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Data Validation and Aggregation for Sales Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" which is unrelated to the problem.",
+        "The candidate did not attempt to address the data validation and aggregation requirements.",
+        "The response demonstrates a lack of understanding of the problem."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "{'A123': 175, 'C789': 200}",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Order Fulfillment Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, indicating an understanding of the question's requirement.",
+        "The provided code 'create table;' is incomplete and contains syntax errors, making it impossible to evaluate the schema design.",
+        "The candidate needs to learn SQL syntax and schema design principles to answer database questions effectively."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints 'x', which is unrelated to the problem.",
+        "The candidate provided a minimal response with no understanding of the problem.",
+        "The candidate needs to review database query optimization and simulation techniques."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Query: SELECT * FROM orders WHERE customer_id = 123 Data Size: 500 Execution Time: 175.00 units Optimization Suggestion: Check if indexes are used on the WHERE clause columns. Query: SELECT o.order_id, c.customer_name FROM orders o JOIN customers c ON o.customer_id = c.customer_id Data Size: 200 Execution Time: 180.00 units Optimization Suggestion: Consider adding indexes to the join columns. Query: SELECT product_name FROM products Data Size: 100 Execution Time: 10.00 units Query performance is acceptable.",
+          "actual_output": "x",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "PARTIAL_MATCH",
+          "match_confidence": 0.001953125,
+          "comparison_notes": "Output partially matches (substring detected)"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The provided code has a syntax error and lacks any schema definition, indicating a lack of understanding of database schema design.",
+        "The response demonstrates minimal understanding of the question and requires significant improvement in SQL and database concepts."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-10-27T21:56:51.253896"
+}

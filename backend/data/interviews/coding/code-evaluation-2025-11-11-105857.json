@@ -1,0 +1,48 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Data Validation and Aggregation for Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code does not address the problem at all.",
+        "The candidate needs to demonstrate an understanding of data validation and aggregation.",
+        "This response indicates a lack of familiarity with the required concepts."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "{'Electronics': 6825}",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "E-commerce Order Analysis and Customer Segmentation",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, which is a start.",
+        "The response lacks any table schema definition, making it impossible to evaluate the design.",
+        "The candidate needs to provide a complete and valid SQL schema to address the problem."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T11:00:34.113871"
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Data Validation and Aggregation for Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello world\" and does not address the problem.",
+        "The candidate provided a minimal explanation, indicating a lack of understanding of the task.",
+        "The response demonstrates no attempt to solve the data validation and aggregation problem."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "North: 468.0 South: 350.0 East: 189.0 West: 564.375 Central: 300.0",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Customer Order Analysis and Reporting Schema",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, indicating a basic understanding of the task.",
+        "The provided code `create table;` is incomplete and syntactically incorrect, lacking table name, column definitions, and constraints.",
+        "The candidate needs to learn the correct syntax for creating tables in SQL."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T11:13:30.563462"
+}

@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table.",
+        "The code has a syntax error and does not define the table schema, missing crucial information like column names and data types.",
+        "The response demonstrates a lack of understanding of SQL table creation syntax."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Data Validation and Filtering for Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hi\" and does not address the data validation and filtering requirements.",
+        "The candidate needs to implement the logic for filtering and formatting the order data as specified in the problem description.",
+        "The response demonstrates a lack of understanding of the problem requirements."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Order ID: 1, Customer ID: 101, Total Value: 50.0 Order ID: 4, Customer ID: 103, Total Value: 100.0 Order ID: 5, Customer ID: 102, Total Value: 100.0",
+          "actual_output": "hi",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Order Analysis",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, but the schema is incomplete and lacks any meaningful structure.",
+        "The response demonstrates a lack of understanding of database schema design principles and the specific requirements of customer order analysis.",
+        "The candidate needs significant improvement in SQL and database design concepts."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code only prints \"hello\" and does not address the problem of simulating and optimizing a slow query.",
+        "The candidate's explanation \"ss\" provides no insight into the problem or potential solutions.",
+        "This response demonstrates a complete lack of understanding of the question and requires significant improvement."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Initial query time: 35.78 seconds Optimized query time: 17.89 seconds Improvement: 17.89 seconds",
+          "actual_output": "hello",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Customer Segmentation for Targeted Marketing Campaigns",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The candidate attempted to create a table, but the name 'op' is insufficient and doesn't provide any context to the problem.",
+        "The response lacks any schema design, table definitions, or column specifications required for customer segmentation.",
+        "The response demonstrates a lack of understanding of database schema design principles and the requirements of the problem."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-11T18:18:12.077681"
+}

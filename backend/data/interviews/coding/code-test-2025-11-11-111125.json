@@ -1,0 +1,26 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "11-11-2025",
+  "questions": [
+    {
+      "question_id": 2,
+      "question_title": "Data Validation and Aggregation for Reporting",
+      "question_type": "coding_debug",
+      "technology": "Python",
+      "expected_output": "North: 468.0 South: 350.0 East: 189.0 West: 564.375 Central: 300.0",
+      "candidate_code": "print(\"hello world\")",
+      "candidate_explanation": "ss",
+      "candidate_full_response": "FIXED CODE:\nprint(\"hello world\")\n\nEXPLANATION:\nss"
+    },
+    {
+      "question_id": 1,
+      "question_title": "Customer Order Analysis and Reporting Schema",
+      "question_type": "db_schema",
+      "technology": "SQL",
+      "expected_output": "",
+      "candidate_code": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss",
+      "candidate_explanation": "",
+      "candidate_full_response": "SQL SCHEMA:\ncreate table;\n\nDESIGN EXPLANATION:\nss"
+    }
+  ]
+}

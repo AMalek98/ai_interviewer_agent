@@ -1,0 +1,42 @@
+Job Title: Database Engineer / Data Management Specialist
+
+Location: Hybrid / Remote / On-site (Flexible)
+Employment Type: Full-Time
+
+About the Role
+
+We are seeking a highly skilled Database Engineer to design, implement, and optimize our data infrastructure. The ideal candidate will be passionate about data modeling, query performance, and ensuring the reliability and scalability of large-scale database systems across SQL and NoSQL technologies.
+
+Key Responsibilities
+
+Design, develop, and maintain high-performance databases (SQL or NoSQL) supporting critical business applications.
+
+Write complex and optimized SQL queries, stored procedures, and views for data analysis and reporting.
+
+Manage database systems such as PostgreSQL, MongoDB ensuring data integrity and availability.
+
+Implement data replication, partitioning, and sharding strategies to improve scalability and performance.
+
+Monitor database health and optimize query execution using performance tuning tools.
+
+Collaborate with backend developers, data engineers, and DevOps teams to ensure smooth data flow across systems.
+
+Automate database backups, versioning, and deployments using modern CI/CD practices.
+
+Ensure database security, access control, and compliance with organizational standards.
+
+Required Skills & Qualifications
+
+Proven experience working with at least one relational database (MySQL, PostgreSQL, Oracle, SQL Server) and one NoSQL database (MongoDB, Cassandra, DynamoDB, etc.).
+
+Strong understanding of data modeling, indexing, normalization, and query optimization.
+
+Proficiency in SQL and database scripting languages.
+
+Experience with ETL processes, data pipelines, and performance tuning.
+
+Familiarity with cloud database services (AWS RDS, Azure SQL, Google Cloud Firestore, etc.) is a plus.
+
+Knowledge of database monitoring tools (e.g., Prometheus, Grafana, New Relic) preferred.
+
+Bachelor’s degree in Computer Science, Information Systems, or related field.

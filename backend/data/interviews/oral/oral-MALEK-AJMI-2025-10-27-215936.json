@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "candidate_name": "MALEK AJMI",
+    "date": "2025-10-27",
+    "duration_minutes": 7.4,
+    "total_turns": 14,
+    "difficulty_score": 6,
+    "topics_covered": [
+      "database"
+    ],
+    "job_description": "Job Title: Database Engineer / Data Management Specialist\n\nLocation: Hybrid / Remote / On-site (Flexible)\nEmployment Type: Full-Time\n\nAbout the Role\n\nWe are seeking a highly skilled Database Engineer ..."
+  },
+  "conversation": [
+    {
+      "speaker": "interviewer",
+      "text": "Hello! Thank you for joining us today. To start, could you please introduce yourself and tell me a bit about your background?",
+      "timestamp": "2025-10-27T21:59:36.867986",
+      "turn": 0,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "my name is melakashmi and I have masters degree in Business Analytics",
+      "timestamp": "2025-10-27T22:00:02.121221",
+      "turn": 1,
+      "audio_file": "oral-interview-q0-2025-10-27T21-00-02.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time you were working on a data science project with a team, and you encountered a significant disagreement on the best approach to solve a problem. How did you navigate that disagreement, and what was the outcome?",
+      "timestamp": "2025-10-27T22:00:02.796313",
+      "turn": 2,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "I tried to convince them based on my research and the outcome was adopting my way of work",
+      "timestamp": "2025-10-27T22:00:28.238321",
+      "turn": 2,
+      "audio_file": "oral-interview-q1-2025-10-27T21-00-28.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Tell me about a time you faced a data science problem where the initial approach you tried proved unsuccessful. What did you do to reassess the situation and ultimately find a solution?",
+      "timestamp": "2025-10-27T22:00:29.094567",
+      "turn": 3,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "based on the limits I found I tried to figure out another route",
+      "timestamp": "2025-10-27T22:00:49.167117",
+      "turn": 3,
+      "audio_file": "oral-interview-q2-2025-10-27T21-00-49.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Describe a situation where you had to quickly adapt to a new data science tool or technology that you weren't initially familiar with. What was the learning curve like, and how did you ensure you were effectively utilizing it for your project?",
+      "timestamp": "2025-10-27T22:00:50.073589",
+      "turn": 4,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "reading documentation using cloth Opus for for research and Gemini and also watching tutorial it was very helpful",
+      "timestamp": "2025-10-27T22:01:17.560861",
+      "turn": 4,
+      "audio_file": "oral-interview-q3-2025-10-27T21-01-17.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for sharing those experiences, Malek. It sounds like you've had to navigate some interesting challenges and learn quickly. Now, let's dive into your work at Metavoria. Can you tell me about a specific project where you utilized NLP and LangChain, and walk me through your role and contributions?",
+      "timestamp": "2025-10-27T22:01:18.636510",
+      "turn": 5,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "the restaurant area customer service I use like chain and NLB to extract items from row input of the customer",
+      "timestamp": "2025-10-27T22:01:49.460993",
+      "turn": 5,
+      "audio_file": "oral-interview-q4-2025-10-27T21-01-49.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Building on your experience with LangChain and NLP at Metavoria in the restaurant customer service project, could you tell me more about the overall impact that project had on the customer service experience? What were some of the biggest challenges you faced in improving that experience, and what did you learn about customer service or NLP in the process?",
+      "timestamp": "2025-10-27T22:01:50.574138",
+      "turn": 6,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was about the time efficiency response and also the accuracy is not forgivable we need to maintain the accuracy to extract the correct item using structured output",
+      "timestamp": "2025-10-27T22:02:27.653788",
+      "turn": 6,
+      "audio_file": "oral-interview-q5-2025-10-27T21-02-27.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thinking about your work at Metavoria, can you describe another project where you used your data science skills, perhaps one that didn't involve NLP or LangChain? What were you hoping to achieve with that project, what were some of the biggest hurdles you encountered along the way, and what did you take away from that experience?",
+      "timestamp": "2025-10-27T22:02:28.894912",
+      "turn": 7,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was about the",
+      "timestamp": "2025-10-27T22:02:52.664067",
+      "turn": 7,
+      "audio_file": "oral-interview-q6-2025-10-27T21-02-52.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "You mentioned working on a project at Metavoria that didn't involve NLP or LangChain. Can you tell me about that project, focusing on what you were hoping to achieve, what kind of impact it had, what challenges you encountered, and what you learned from the experience?",
+      "timestamp": "2025-10-27T22:02:53.585760",
+      "turn": 8,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was the insurance OCR we didn't use NLP it was another subject was computer vision to the digitalize the constant and the create systematic database",
+      "timestamp": "2025-10-27T22:03:28.632148",
+      "turn": 8,
+      "audio_file": "oral-interview-q7-2025-10-27T21-03-28.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thinking about the insurance OCR project you mentioned, what were some of the biggest roadblocks you encountered in digitizing those documents and creating the database, and how did you overcome them? What impact did successfully overcoming those challenges have on the project's overall success, and what did you learn about data management or computer vision in the process?",
+      "timestamp": "2025-10-27T22:03:29.697744",
+      "turn": 9,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was about the accuracy of reading the handwriting text it was very hard we used reinforcement learning to adapt and make sure the model performs better",
+      "timestamp": "2025-10-27T22:04:07.631235",
+      "turn": 9,
+      "audio_file": "oral-interview-q8-2025-10-27T21-04-07.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Thanks for walking me through those projects, Malek. It sounds like you've gained some valuable experience with NLP, computer vision, and various data science tools. Now, thinking about those experiences and the skills you've developed, what specifically excites you about this particular data scientist role at [Company Name], and how do you see your background aligning with the requirements we've outlined?",
+      "timestamp": "2025-10-27T22:04:08.807002",
+      "turn": 10,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "this road makes me available with more data science tools that are basically an improvement for my skills and I see myself with a variety of background as a perfect candidate",
+      "timestamp": "2025-10-27T22:04:51.844339",
+      "turn": 10,
+      "audio_file": "oral-interview-q9-2025-10-27T21-04-51.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Looking at the job description, we're seeking someone with experience in both SQL and NoSQL databases. You mentioned PostgreSQL in your background. Could you describe a specific project where you utilized PostgreSQL, detailing the challenges you faced in managing and optimizing that database, and what strategies you employed to ensure its performance and scalability?",
+      "timestamp": "2025-10-27T22:04:52.817957",
+      "turn": 11,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "supposed to get the school was a very valuable asset so I used PG Vector for vectorizing that is database the menu with the restaurant customer service to accelerate the item retrieval also I used indexing",
+      "timestamp": "2025-10-27T22:05:35.717555",
+      "turn": 11,
+      "audio_file": "oral-interview-q10-2025-10-27T21-05-35.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role requires a lot of collaboration with different teams. Can you describe your preferred style of working within a team, especially when dealing with differing opinions or priorities between backend developers, data engineers, and DevOps teams, as mentioned in the job description?",
+      "timestamp": "2025-10-27T22:05:36.562380",
+      "turn": 12,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "to work in such complex",
+      "timestamp": "2025-10-27T22:05:59.074761",
+      "turn": 12,
+      "audio_file": "oral-interview-q11-2025-10-27T21-05-59.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "This role involves a lot of independent problem-solving in database design and optimization. Can you describe a time when you independently identified a performance bottleneck in a database system, diagnosed the root cause, and implemented a solution that significantly improved performance? What steps did you take, and what was the impact of your solution?",
+      "timestamp": "2025-10-27T22:06:00.168931",
+      "turn": 13,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "it was the similarities search in our database we we used to do with the on the road database in post office screen it was very very long it wasn't in real time so we had to use PG Vector for vectorizing and then embed the the input and after that we apply the similarity surgery it helped us increase 60% that the response time",
+      "timestamp": "2025-10-27T22:06:52.174430",
+      "turn": 13,
+      "audio_file": "oral-interview-q12-2025-10-27T21-06-52.webm"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Do you have any questions for us?",
+      "timestamp": "2025-10-27T22:06:52.175430",
+      "turn": 14,
+      "audio_file": null
+    },
+    {
+      "speaker": "candidate",
+      "text": "no",
+      "timestamp": "2025-10-27T22:06:59.093043",
+      "turn": 14,
+      "audio_file": "oral-interview-q13-2025-10-27T21-06-59.webm"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "candidate_name": "Candidate",
+  "interview_date": "10-11-2025",
+  "overall_score": 1.0,
+  "overall_feedback": "Needs significant improvement in coding skills",
+  "questions": [
+    {
+      "question_title": "Order Fulfillment Analysis and Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The response only contains 'create table;' which is insufficient to create any tables.",
+        "The response lacks any table definitions, column specifications, or constraints, making it impossible to evaluate the schema design.",
+        "The candidate needs to demonstrate the ability to define database tables with appropriate columns, data types, and relationships."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Inefficient SQL Query for User Activity Reporting",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the prompt.",
+        "The response lacks any attempt to solve the SQL query problem.",
+        "The candidate needs to demonstrate SQL skills to answer this question."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "[2, 1]",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Order Fulfillment Optimization",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The code has a syntax error and cannot be compiled.",
+        "The candidate provided a minimal response without attempting to address the problem.",
+        "The candidate needs to demonstrate a basic understanding of SQL syntax."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \"table\": syntax error\n",
+          "error": null
+        }
+      }
+    },
+    {
+      "question_title": "Slow Query Simulation and Optimization",
+      "question_type": "coding_debug",
+      "score": 1,
+      "feedback": [
+        "The code provided does not address the problem of simulating and optimizing a slow query.",
+        "The response lacks any attempt to implement the required functionality or explain a potential solution.",
+        "The candidate needs to demonstrate understanding of query optimization techniques and provide a relevant code implementation."
+      ],
+      "details": {
+        "execution_comparison": {
+          "expected_output": "Data: [Example Data - will vary on each run] Searching for: Example Search Value - will vary on each run Value Example Search Value - will vary on each run found at index Example Index - will vary on each run. Iterations: Example Iteration Count - will vary on each run Optimized search complete. Initial iterations: Example Iteration Count - will vary on each run, Optimized iterations: Example Optimized Iteration Count - will vary on each run",
+          "actual_output": "hello world",
+          "exit_code": 0,
+          "stderr": "",
+          "compilation_success": true,
+          "match_status": "NO_MATCH",
+          "match_confidence": 0.0,
+          "comparison_notes": "Output does not match expected result"
+        }
+      }
+    },
+    {
+      "question_title": "Optimizing Order Fulfillment Analysis for E-commerce",
+      "question_type": "db_schema",
+      "score": 1,
+      "feedback": [
+        "The submission has a syntax error and does not define any tables or columns.",
+        "The candidate needs to provide a valid SQL schema to address the order fulfillment analysis requirements.",
+        "The response demonstrates a lack of understanding of database schema creation."
+      ],
+      "details": {
+        "sql_validation": {
+          "valid_syntax": false,
+          "stderr": "Error: near line 3: near \";\": syntax error\n",
+          "error": null
+        }
+      }
+    }
+  ],
+  "evaluation_timestamp": "2025-11-10T14:02:28.204382"
+}

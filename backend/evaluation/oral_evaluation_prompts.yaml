@@ -1,0 +1,93 @@
+# Oral Interview Evaluation Prompts
+# Text-based evaluation of oral interview transcriptions
+
+oral_response_evaluation_prompt: |
+  Evaluate this oral interview Q&A exchange with STRICT, ACCURATE scoring.
+
+  QUESTION ASKED:
+  {question}
+
+  CANDIDATE'S SPOKEN RESPONSE:
+  {response}
+
+  CONTEXT:
+  - Interview difficulty level: {difficulty_level}/10
+  - Topics covered so far: {topics_covered}
+
+  CRITICAL SCORING INSTRUCTIONS:
+  - Score strictly and honestly - be calibrated, not lenient
+  - 5/10 is AVERAGE performance, not good
+  - Scores must match your feedback - if you identify weaknesses, scores must reflect them
+  - If feedback says "lacks depth/detail/specificity," score MUST be ≤5
+
+  SCORING SCALE DEFINITIONS:
+
+  RELEVANCE (0-10): Does the response fully address ALL parts of the question?
+  - 9-10: Comprehensively answers every part with relevant details
+  - 7-8: Addresses main question but may miss secondary parts or lack depth
+  - 5-6: Partially addresses question, significant gaps or generic answer
+  - 3-4: Tangentially related but misses key points asked
+  - 0-2: Off-topic, evasive, or refuses to answer
+  PENALTIES: -2 for each question part unanswered, -1 for overly generic responses
+
+  TECHNICAL VOCABULARY (0-10): Depth and precision of technical knowledge demonstrated
+  - 9-10: Advanced, role-specific terminology with precision (e.g., "implemented distributed training with Horovod", "optimized using quantization and pruning")
+  - 7-8: Specific frameworks/tools/methods correctly used (e.g., "deployed with Kubernetes", "used React hooks and Redux")
+  - 5-6: Industry terms used but generically without specifics (e.g., "worked with AI models", "used pipelines")
+  - 3-4: Only basic buzzwords without context (e.g., "AI", "data", "cloud")
+  - 0-2: No technical terminology or incorrect usage
+  PENALTIES: -2 if only generic buzzwords, -1 for vague terms without specifics
+
+  COHERENCE (0-10): Logical structure, completeness, and flow of ideas
+  - 9-10: Well-structured, complete thoughts, clear logical progression
+  - 7-8: Logical flow with minor gaps or slight incompleteness
+  - 5-6: Some logical connection but disjointed or incomplete ideas
+  - 3-4: Poor structure, significant logical gaps, run-on thoughts
+  - 0-2: Incoherent, no logical flow, fragmented
+  PENALTIES: -2 for run-on sentences, -1 for incomplete thoughts, -1 for jumping between topics
+
+  CLARITY (0-10): Communication effectiveness (grammar, pronunciation, expression)
+  - 9-10: Excellent grammar, clear expression, professional communication
+  - 7-8: Generally clear with minor grammatical errors
+  - 5-6: Understandable but noticeable grammar/expression issues
+  - 3-4: Multiple errors that hinder understanding
+  - 0-2: Very difficult to understand
+  PENALTIES: -1 per grammatical error, -1 for repeated words/stammering, -1 for unclear expression
+
+  CONSISTENCY CHECK:
+  Before finalizing, verify your scores match your feedback. If you write "lacks depth," "vague," "incomplete," or "could be more specific," the corresponding score MUST be ≤5.
+
+  Provide:
+  1. Relevance score (0-10)
+  2. Technical score (0-10)
+  3. Coherence score (0-10)
+  4. Clarity score (0-10)
+  5. Relevance phrase (max 10 words): Brief assessment of answer relevance
+  6. Technical phrase (max 10 words): Brief assessment of technical quality
+  7. Coherence phrase (max 10 words): Brief assessment of logic and completeness
+
+  Keep each phrase concise and factual.
+
+oral_summary_prompt: |
+  Generate overall evaluation summary for this oral interview.
+
+  CANDIDATE: {candidate_name}
+  INTERVIEW DATE: {interview_date}
+  DURATION: {duration_minutes} minutes
+  TOTAL QUESTIONS: {total_turns}
+
+  SCORES:
+  - Overall Score: {overall_score}/10
+  - Technical Vocabulary: {technical_score}/10 (30% weight)
+  - Coherence: {coherence_score}/10 (30% weight)
+  - Relevance: {relevance_score}/10 (25% weight)
+  - Clarity: {clarity_score}/10 (15% weight)
+
+  INSTRUCTIONS:
+  Write 2-3 sentences summarizing the candidate's oral interview performance:
+  1. Start with overall score and general communication assessment
+  2. Highlight strongest area (technical knowledge vs communication skills)
+  3. Identify area needing most improvement
+
+  Focus on communication skills, technical depth, and interview readiness.
+  Be professional and constructive for HR/hiring managers.
