@@ -29,6 +29,23 @@ from shared.llm_setup import get_llm
 llm = get_llm()
 
 
+# ============================================================================
+# PATH CONFIGURATION (Like coding_interview pattern)
+# ============================================================================
+
+def get_text_interviews_folder():
+    """Get text interviews folder path - all files in one place"""
+    return os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        'data',
+        'interviews',
+        'text'
+    )
+
+# Ensure directory exists
+os.makedirs(get_text_interviews_folder(), exist_ok=True)
+
+
 def start_interview():
     print("=== START_INTERVIEW ROUTE HIT ===")
     print(f"Request method: {request.method}")
@@ -40,7 +57,7 @@ def start_interview():
         # Parse and load structured job description
         print("Parsing job description...")
         # Use hardcoded paths (consistent with current app.py behavior)
-        uploads_folder = 'C:\\Users\\Mega-PC\\Desktop\\ai_interviewer\\uploads'
+        uploads_folder = 'C:\\Users\\Mega-PC\\Desktop\\ai_interviewer\\backend\\data\\uploads'
         job_desc_txt_path = os.path.join(uploads_folder, 'job_description.txt')
         job_data_path = os.path.join(uploads_folder, 'structured_job_description.json')
 
@@ -271,7 +288,7 @@ def submit_response():
                 evaluation_data = None
                 try:
                     if evaluation_filename:
-                        evaluation_path = os.path.join(os.path.dirname(__file__), "evaluation_reports", evaluation_filename)
+                        evaluation_path = os.path.join(get_text_interviews_folder(), evaluation_filename)
                         if os.path.exists(evaluation_path):
                             with open(evaluation_path, 'r', encoding='utf-8') as f:
                                 evaluation_data = json.load(f)
@@ -279,33 +296,33 @@ def submit_response():
 
                         # Also load interview JSON to get detailed QCM question data
                         if interview_filename:
-                            interview_path = os.path.join(os.path.dirname(__file__), "interviews", interview_filename)
+                            interview_path = os.path.join(get_text_interviews_folder(), interview_filename)
 
-                        if os.path.exists(interview_path):
-                            with open(interview_path, 'r', encoding='utf-8') as f:
-                                interview_data = json.load(f)
+                            if os.path.exists(interview_path):
+                                with open(interview_path, 'r', encoding='utf-8') as f:
+                                    interview_data = json.load(f)
 
-                            # Extract QCM question details
-                            qcm_question_details = []
-                            for question in interview_data.get("questions", []):
-                                if question.get("type") == "qcm":
-                                    qcm_detail = {
-                                        "question_id": question.get("question_id"),
-                                        "question_text": question.get("question_text"),
-                                        "user_answer": question.get("selected_answer", ""),
-                                        "correct_answer": question.get("correct_answer", ""),
-                                        "correct_answers": question.get("correct_answers", []),
-                                        "is_correct": question.get("is_correct", False),
-                                        "is_multiple_choice": question.get("is_multiple_choice", False),
-                                        "options": question.get("options", [])
-                                    }
-                                    qcm_question_details.append(qcm_detail)
+                                # Extract QCM question details
+                                qcm_question_details = []
+                                for question in interview_data.get("questions", []):
+                                    if question.get("type") == "qcm":
+                                        qcm_detail = {
+                                            "question_id": question.get("question_id"),
+                                            "question_text": question.get("question_text"),
+                                            "user_answer": question.get("selected_answer", ""),
+                                            "correct_answer": question.get("correct_answer", ""),
+                                            "correct_answers": question.get("correct_answers", []),
+                                            "is_correct": question.get("is_correct", False),
+                                            "is_multiple_choice": question.get("is_multiple_choice", False),
+                                            "options": question.get("options", [])
+                                        }
+                                        qcm_question_details.append(qcm_detail)
 
-                            # Add to evaluation data
-                            evaluation_data["qcm_question_details"] = qcm_question_details
-                            print(f"Added {len(qcm_question_details)} QCM question details to evaluation")
-                        else:
-                            print(f"Warning: Interview JSON not found at {interview_path}")
+                                # Add to evaluation data
+                                evaluation_data["qcm_question_details"] = qcm_question_details
+                                print(f"Added {len(qcm_question_details)} QCM question details to evaluation")
+                            else:
+                                print(f"Warning: Interview JSON not found at {interview_path}")
                     else:
                         print(f"Warning: Evaluation report not found at {evaluation_path}")
                 except Exception as e:
@@ -349,7 +366,7 @@ def submit_response():
             evaluation_data = None
             try:
                 if evaluation_filename:
-                    evaluation_path = os.path.join(os.path.dirname(__file__), "evaluation_reports", evaluation_filename)
+                    evaluation_path = os.path.join(get_text_interviews_folder(), evaluation_filename)
                     if os.path.exists(evaluation_path):
                         with open(evaluation_path, 'r', encoding='utf-8') as f:
                             evaluation_data = json.load(f)

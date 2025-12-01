@@ -10,6 +10,7 @@ Handles:
 import threading
 import json
 import os
+import sys
 import yaml
 from datetime import datetime
 from typing import Optional, Dict, Any
@@ -238,7 +239,7 @@ def end_interview(state: InterviewState) -> Dict[str, Any]:
     # ========================================
     # Save Enhanced Interview JSON
     # ========================================
-    interviews_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "interviews")
+    interviews_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "interviews", "text")
     os.makedirs(interviews_dir, exist_ok=True)
 
     timestamp = datetime.now().strftime('%Y-%m-%d-%H%M%S')
@@ -269,6 +270,17 @@ def end_interview(state: InterviewState) -> Dict[str, Any]:
         print("\nEvaluation completed successfully!")
         print(f"Overall Score: {evaluation_report.overall_score}/10")
         print(f"Report saved to: evaluation_reports/{evaluation_filename}")
+
+        # Move evaluation report from backend/evaluation_reports/ to backend/data/interviews/text/
+        import shutil
+        old_eval_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "evaluation_reports", evaluation_filename)
+        new_eval_path = os.path.join(interviews_dir, evaluation_filename)
+
+        if os.path.exists(old_eval_path):
+            shutil.move(old_eval_path, new_eval_path)
+            print(f"Moved evaluation report to: {new_eval_path}")
+        else:
+            print(f"Warning: Evaluation report not found at {old_eval_path}")
 
     except Exception as e:
         print(f"\nEvaluation failed: {e}")
